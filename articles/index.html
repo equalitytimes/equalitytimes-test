@@ -1,0 +1,81 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Articles | Equality Times</title>
+  <meta name="description" content="Articles and original writings published by Equality Times."/>
+  <link rel="stylesheet" href="/assets/style.css"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="/">
+      <div class="brand-logo"><img src="/assets/logo.png" alt="Equality Times logo"></div>
+      <div>
+        <div class="brand-title">Equality Times</div>
+        <div class="brand-sub">Constitution • Equality • Human Rights • Legal Awareness</div>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a class="active" href="/articles/">Articles</a>
+      <a href="/videos.html">Videos</a>
+      <a href="/news.html">News & Stories</a>
+      <a href="/research.html">Research</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h1 class="section-title">Articles</h1>
+          <p class="section-note">Original writings, legal explainers, analysis, and perspectives.</p>
+        </div>
+      </div>
+
+      <div class="article-list">
+        {% if site.posts.size > 0 %}
+          {% for post in site.posts %}
+            <article class="article-list-card">
+              {% if post.cover_image %}
+                <a class="article-list-media" href="{{ post.url }}"><img src="{{ post.cover_image }}" alt="{{ post.title | escape }}"></a>
+              {% else %}
+                <a class="article-list-media article-list-fallback" href="{{ post.url }}"><span>{{ post.category | default: "ARTICLE" }}</span></a>
+              {% endif %}
+              <div class="article-list-body">
+                <div class="article-category">{{ post.category | default: "Article" }}</div>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <div class="article-list-meta">{{ post.author | default: "Equality Times" }} • {{ post.date | date: "%d %B %Y" }}</div>
+                {% if post.excerpt %}<p>{{ post.excerpt }}</p>{% endif %}
+                <a class="btn btn-primary" href="{{ post.url }}">Read Article →</a>
+              </div>
+            </article>
+          {% endfor %}
+        {% else %}
+          <div class="card">
+            <h3>No articles published yet.</h3>
+            <p>Your first approved article will appear here automatically.</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-text">© <span id="yr"></span> Equality Times</div>
+    <div class="footer-text">Public Legal Education Platform • equalitytimesindia@gmail.com</div>
+  </div>
+</footer>
+<script src="/assets/site.js"></script>
+</body>
+</html>

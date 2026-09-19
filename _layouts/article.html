@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>{{ page.title }} | Equality Times</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | escape }}"/>
+  <link rel="stylesheet" href="/assets/style.css"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="/">
+      <div class="brand-logo"><img src="/assets/logo.png" alt="Equality Times logo"></div>
+      <div>
+        <div class="brand-title">Equality Times</div>
+        <div class="brand-sub">Constitution • Equality • Human Rights • Legal Awareness</div>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a class="active" href="/articles/">Articles</a>
+      <a href="/videos.html">Videos</a>
+      <a href="/news.html">News & Stories</a>
+      <a href="/research.html">Research</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="article-page">
+    <div class="container article-shell">
+      <div class="article-main">
+        <div class="article-breadcrumb"><a href="/">Home</a> <span>›</span> <a href="/articles/">Articles</a> <span>›</span> {{ page.category | default: "Article" }}</div>
+
+        <div class="article-category">{{ page.category | default: "Article" }}</div>
+        <h1 class="article-title">{{ page.title }}</h1>
+        {% if page.excerpt %}<p class="article-excerpt">{{ page.excerpt }}</p>{% endif %}
+
+        <div class="article-meta">
+          <div><strong>{{ page.author | default: "Equality Times" }}</strong><br><span>{{ page.date | date: "%d %B %Y" }}</span></div>
+        </div>
+
+        {% if page.cover_image %}
+          <figure class="article-cover">
+            <img src="{{ page.cover_image }}" alt="{{ page.title | escape }}">
+          </figure>
+        {% endif %}
+
+        <div class="article-content">
+          {{ content }}
+        </div>
+
+        {% if page.tags %}
+          <div class="article-tags">
+            {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
+      <aside class="article-sidebar">
+        <div class="article-sidebar-card">
+          <h3>Equality Times</h3>
+          <p>A public legal education platform focused on law, equality, society, human rights, and legal awareness.</p>
+          <a class="btn btn-primary" href="/about.html">About Equality Times</a>
+        </div>
+
+        <div class="article-sidebar-card">
+          <h3>Explore Articles</h3>
+          <a class="article-sidebar-link" href="/articles/">All Articles →</a>
+          <a class="article-sidebar-link" href="/research.html">Research →</a>
+          <a class="article-sidebar-link" href="/news.html">News & Stories →</a>
+        </div>
+
+        <div class="article-sidebar-card article-submit-card">
+          <h3>Write for Equality Times</h3>
+          <p>Have a legal analysis, research article, opinion, or story to share?</p>
+          <a class="btn btn-secondary" href="/contact.html">Contact Us</a>
+        </div>
+      </aside>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-text">© <span id="yr"></span> Equality Times</div>
+    <div class="footer-text">Public Legal Education Platform • equalitytimesindia@gmail.com</div>
+  </div>
+</footer>
+<script src="/assets/site.js"></script>
+</body>
+</html>
