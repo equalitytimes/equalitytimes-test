@@ -1,7 +1,7 @@
 title: Equality Times
 description: Public legal education platform focused on constitutional law, equality, human rights, and legal awareness.
 url: "https://equalitytimes.in"
-baseurl: ""
+baseurl: "/equalitytimes-test"
 permalink: /articles/:title/
 markdown: kramdown
 future: false
