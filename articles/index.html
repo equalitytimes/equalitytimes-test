@@ -7,26 +7,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Articles | Equality Times</title>
   <meta name="description" content="Articles and original writings published by Equality Times."/>
-  <link rel="stylesheet" href="/assets/style.css"/>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"/>
 </head>
 <body>
 <header class="topbar">
   <div class="container topbar-inner">
-    <a class="brand" href="/">
-      <div class="brand-logo"><img src="/assets/logo.png" alt="Equality Times logo"></div>
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <div class="brand-logo"><img src="{{ '/assets/logo.png' | relative_url }}" alt="Equality Times logo"></div>
       <div>
         <div class="brand-title">Equality Times</div>
         <div class="brand-sub">Constitution • Equality • Human Rights • Legal Awareness</div>
       </div>
     </a>
     <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a class="active" href="/articles/">Articles</a>
-      <a href="/videos.html">Videos</a>
-      <a href="/news.html">News & Stories</a>
-      <a href="/research.html">Research</a>
-      <a href="/contact.html">Contact</a>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about.html' | relative_url }}">About</a>
+      <a class="active" href="{{ '/articles/' | relative_url }}">Articles</a>
+      <a href="{{ '/videos.html' | relative_url }}">Videos</a>
+      <a href="{{ '/news.html' | relative_url }}">News & Stories</a>
+      <a href="{{ '/research.html' | relative_url }}">Research</a>
+      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
     </nav>
   </div>
 </header>
@@ -46,16 +46,16 @@
           {% for post in site.posts %}
             <article class="article-list-card">
               {% if post.cover_image %}
-                <a class="article-list-media" href="{{ post.url }}"><img src="{{ post.cover_image }}" alt="{{ post.title | escape }}"></a>
+                <a class="article-list-media" href="{{ post.url | relative_url }}"><img src="{{ post.cover_image | relative_url }}" alt="{{ post.title | escape }}"></a>
               {% else %}
-                <a class="article-list-media article-list-fallback" href="{{ post.url }}"><span>{{ post.category | default: "ARTICLE" }}</span></a>
+                <a class="article-list-media article-list-fallback" href="{{ post.url | relative_url }}"><span>{{ post.category | default: "ARTICLE" }}</span></a>
               {% endif %}
               <div class="article-list-body">
                 <div class="article-category">{{ post.category | default: "Article" }}</div>
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
                 <div class="article-list-meta">{{ post.author | default: "Equality Times" }} • {{ post.date | date: "%d %B %Y" }}</div>
                 {% if post.excerpt %}<p>{{ post.excerpt }}</p>{% endif %}
-                <a class="btn btn-primary" href="{{ post.url }}">Read Article →</a>
+                <a class="btn btn-primary" href="{{ post.url | relative_url }}">Read Article →</a>
               </div>
             </article>
           {% endfor %}
@@ -76,6 +76,7 @@
     <div class="footer-text">Public Legal Education Platform • equalitytimesindia@gmail.com</div>
   </div>
 </footer>
-<script src="/assets/site.js"></script>
+
+<script src="{{ '/assets/site.js' | relative_url }}"></script>
 </body>
 </html>
