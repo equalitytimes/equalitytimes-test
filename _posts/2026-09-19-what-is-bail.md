@@ -1,12 +1,11 @@
 ---
 layout: article
-title: What is Bail?
-author: Equality Times
+title: What is Bail? in criminal law
+author: Equality Time
 date: 2026-09-19
 category: Criminal Law
 excerpt: Bail is the temporary release of an accused person from custody,
   subject to conditions imposed by law or the court.
-cover_image: /media/article-images/31c48b75-87ef-4015-b5d6-0edadc527674-800x470.webp
 tags:
   - BAIL
   - CRIME
