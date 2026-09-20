@@ -1175,7 +1175,7 @@ img{max-width:100%;display:block}
   border-bottom:3px solid transparent;
   transition:.2s ease;
 }
-.et-nav a:hover,.et-nav a.active{color:#fff;border-bottom-color:#f4c400}
+.et-nav a:hover,.et-nav a.active{color:#fff}
 
 .et-page-hero{
   background:#080d11;
