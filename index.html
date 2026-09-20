@@ -66,17 +66,28 @@ layout: null
     }
 
     .et-brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.et-brand-tagline {
+  display: block;
+  margin-top: 7px;
+  font-size: 9px;
+  line-height: 1.25;
+  letter-spacing: .08em;
+  color: #aeb5bd;
+  white-space: nowrap;
+  font-weight: 500;
+}
 
     .et-brand img {
-      width: 190px;
-      max-height: 58px;
-      object-fit: contain;
-      object-position: left center;
-    }
+  width: 128px;
+  max-height: 58px;
+  object-fit: contain;
+  object-position: left center;
+}
 
     .et-brand-copy {
       display: none;
@@ -755,7 +766,10 @@ layout: null
   <div class="et-container et-header-inner">
 
     <a href="{{ '/' | relative_url }}" class="et-brand">
-      <img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times">
+      <div>
+        <img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times">
+        <span class="et-brand-tagline">Legal Education · Research · Public Awareness</span>
+      </div>
     </a>
 
     <nav class="et-nav">
