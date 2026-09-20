@@ -1672,3 +1672,30 @@ img{max-width:100%;display:block}
     padding:7px 0 11px;
   }
 }
+
+
+/* Header brand tagline */
+.site-brand{
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  gap:4px;
+}
+.site-brand-tagline{
+  display:block;
+  margin:0;
+  color:#d7dbe0;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:8.5px;
+  line-height:1;
+  font-weight:600;
+  letter-spacing:1.05px;
+  white-space:nowrap;
+  text-transform:uppercase;
+}
+@media(max-width:600px){
+  .site-brand-tagline{
+    font-size:7.5px;
+    letter-spacing:.8px;
+  }
+}
