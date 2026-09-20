@@ -1337,3 +1337,84 @@ img{max-width:100%;display:block}
   .et-contribute-inner{align-items:flex-start;flex-direction:column}
   .et-footer{padding-left:22px;padding-right:22px}
 }
+
+
+/* Contributor and team pages */
+.team-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:28px;
+  align-items:start;
+}
+.team-card,.team-note,.submission-panel{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  box-shadow:0 12px 30px rgba(17,25,35,.05);
+}
+.team-card{display:grid;grid-template-columns:260px 1fr}
+.team-photo{min-height:310px;background:#ece8d9;overflow:hidden}
+.team-photo img{width:100%;height:100%;object-fit:cover}
+.team-body{padding:30px}
+.team-body h2,.team-note h2,.write-layout h2,.submission-panel h2{
+  margin:0 0 12px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:32px;
+  line-height:1.15;
+}
+.team-body p,.team-note p,.write-layout p,.submission-panel p{
+  color:#53606f;
+  line-height:1.75;
+}
+.team-role{font-weight:700;color:#6b5b17!important}
+.team-note{padding:34px}
+.write-layout{
+  display:grid;
+  grid-template-columns:1fr 360px;
+  gap:38px;
+  align-items:start;
+}
+.write-layout > div:first-child{
+  max-width:760px;
+}
+.write-layout .lead-copy{
+  font-size:18px;
+  line-height:1.8;
+}
+.submission-panel{
+  padding:30px;
+  background:linear-gradient(180deg,#fff8dc 0%,#fff 100%);
+}
+.submission-panel .small{margin-top:16px}
+.video-intro,.research-intro{max-width:850px;margin-bottom:34px}
+.video-intro h2,.research-intro h2,.contact-intro h2{
+  margin:0 0 12px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:38px;
+  line-height:1.15;
+}
+.video-intro p,.research-intro p,.contact-intro p{color:#53606f;line-height:1.75}
+.video-channel-cta,.contribute-cta{
+  margin-top:42px;
+  padding:30px;
+  border-top:1px solid #dfe2e6;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:28px;
+}
+.video-channel-cta h2,.contribute-cta h2{
+  margin:0 0 8px;
+  font-family:Georgia,"Times New Roman",serif;
+}
+.video-channel-cta p,.contribute-cta p{margin:0;color:#667085;line-height:1.7}
+.contribute-kicker{color:#6b5b17;font-size:12px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:10px}
+@media(max-width:900px){
+  .team-grid,.write-layout{grid-template-columns:1fr}
+  .team-card{grid-template-columns:1fr}
+  .team-photo{min-height:280px}
+  .video-channel-cta,.contribute-cta{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:600px){
+  .team-body,.team-note,.submission-panel{padding:24px}
+  .team-body h2,.team-note h2,.write-layout h2,.submission-panel h2{font-size:28px}
+}
