@@ -215,7 +215,52 @@ function fillContact(){
   if(ytLink) ytLink.href = SITE.contact.youtube;
 }
 
+
+/* ===== EQUALITY TIMES THEME TOGGLE ===== */
+function getStoredTheme(){
+  try { return localStorage.getItem("et-theme"); } catch(e) { return null; }
+}
+function applyTheme(theme){
+  const dark = theme === "dark";
+  document.body.classList.toggle("et-dark-mode", dark);
+  document.documentElement.style.colorScheme = dark ? "dark" : "light";
+}
+function initTheme(){
+  const stored = getStoredTheme();
+  const preferred = stored || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  applyTheme(preferred);
+}
+function saveTheme(theme){
+  try { localStorage.setItem("et-theme", theme); } catch(e) {}
+}
+function addThemeToggle(){
+  const headerInner = document.querySelector(".site-header-inner, .et-header-inner");
+  if(!headerInner || document.querySelector(".theme-toggle")) return;
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "theme-toggle";
+  button.setAttribute("aria-label", "Switch to dark mode");
+  button.setAttribute("title", "Switch to dark mode");
+  button.innerHTML = "☾";
+  const updateButton = () => {
+    const dark = document.body.classList.contains("et-dark-mode");
+    button.innerHTML = dark ? "☀" : "☾";
+    button.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+    button.setAttribute("title", dark ? "Switch to light mode" : "Switch to dark mode");
+  };
+  button.addEventListener("click", () => {
+    const dark = !document.body.classList.contains("et-dark-mode");
+    applyTheme(dark ? "dark" : "light");
+    saveTheme(dark ? "dark" : "light");
+    updateButton();
+  });
+  headerInner.appendChild(button);
+  updateButton();
+}
+initTheme();
+
 document.addEventListener("DOMContentLoaded", () => {
+  addThemeToggle();
   yearFill();
   renderVideos("videosFeatured", 3);
   renderVideos("videosGrid");
