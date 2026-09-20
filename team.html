@@ -11,7 +11,16 @@ permalink: /team.html
 <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-<header class="topbar"><div class="container topbar-inner"><a class="brand" href="{{ '/' | relative_url }}"><div class="brand-logo"><img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times logo"></div><div><div class="brand-title">Equality Times</div><div class="brand-sub">Legal Education • Research • Public Awareness</div></div></a><nav class="nav"><a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/about.html' | relative_url }}">About</a><a href="{{ '/articles/' | relative_url }}">Articles</a><a href="{{ '/videos.html' | relative_url }}">Videos</a><a href="{{ '/research.html' | relative_url }}">Research</a><a class="active" href="{{ '/team.html' | relative_url }}">Our Team</a><a href="{{ '/contact.html' | relative_url }}">Contact</a></nav></div></header>
+<header class="et-header">
+  <div class="et-header-inner">
+    <a class="et-brand" href="{{ '/' | relative_url }}" aria-label="Equality Times home">
+      <div><img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times"><span class="et-brand-tagline">Legal Education · Research · Public Awareness</span></div>
+    </a>
+    <nav class="et-nav" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/about.html' | relative_url }}">About</a><a href="{{ '/articles/' | relative_url }}">Articles</a><a href="{{ '/videos.html' | relative_url }}">Videos</a><a href="{{ '/research.html' | relative_url }}">Research</a><a href="{{ '/team.html' | relative_url }}" class="active">Our Team</a><a href="{{ '/contact.html' | relative_url }}">Contact</a>
+    </nav>
+  </div>
+</header>
 <main>
 <section class="et-page-hero"><div class="et-container"><div class="et-kicker">Our Team</div><h1>People behind the platform.</h1><p>Equality Times is built through editorial work, research, media and collaboration.</p></div></section>
 <section class="section"><div class="container"><div class="team-grid">
@@ -19,5 +28,12 @@ permalink: /team.html
 <div class="team-note"><div class="et-section-label">Contributors</div><h2>A collaborative publication.</h2><p>As Equality Times grows, contributors may participate across research, writing, photography, media, editing and other project-based roles.</p><a class="btn btn-secondary" href="{{ '/write.html' | relative_url }}">Contribute to Equality Times →</a></div>
 </div></div></section>
 </main>
-<footer class="footer"><div class="container footer-inner footer-expanded"><div><div class="footer-text">© {{ "now" | date: "%Y" }} Equality Times</div><div class="footer-text">Legal Education · Research · Public Awareness</div></div><div class="footer-links-inline"><a href="index.html">Home</a><a href="about.html">About</a><a href="articles/">Articles</a><a href="research.html">Research</a><a href="videos.html">Videos</a><a href="team.html">Our Team</a><a href="write.html">Write for Equality Times</a><a href="contact.html">Contact</a></div></div></footer>
+<footer class="et-footer">
+  <div class="et-footer-grid">
+    <div><div class="et-footer-brand"><img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times"></div><small>Public Legal Education Platform<br>Legal Education · Research · Public Awareness</small></div>
+    <div><h4>Explore</h4><a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/about.html' | relative_url }}">About</a><a href="{{ '/articles/' | relative_url }}">Articles</a><a href="{{ '/videos.html' | relative_url }}">Videos</a></div>
+    <div><h4>Knowledge &amp; Contact</h4><a href="{{ '/research.html' | relative_url }}">Research</a><a href="{{ '/team.html' | relative_url }}">Our Team</a><a href="{{ '/write.html' | relative_url }}">Write for Equality Times</a><a href="{{ '/contact.html' | relative_url }}">Contact</a></div>
+  </div>
+  <div class="et-copyright"><span>© {{ "now" | date: "%Y" }} Equality Times. All rights reserved.</span><span>A more equal and informed society.</span></div>
+</footer>
 </body></html>
