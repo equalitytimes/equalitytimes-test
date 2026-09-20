@@ -129,15 +129,31 @@ layout: null
     .et-hero-bg {
       position: absolute;
       inset: 0;
-      background-image:
-        linear-gradient(90deg,
-          rgba(248,247,243,.98) 0%,
-          rgba(248,247,243,.94) 32%,
-          rgba(248,247,243,.48) 56%,
-          rgba(248,247,243,.05) 100%),
-        url("{{ '/assets/hero-final.jpg' | relative_url }}");
-      background-size: cover;
-      background-position: center;
+      overflow: hidden;
+      background: #eef0ee;
+    }
+
+    .et-hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .et-hero-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(248,247,243,.96) 0%,
+        rgba(248,247,243,.86) 28%,
+        rgba(248,247,243,.42) 48%,
+        rgba(248,247,243,.05) 68%
+      );
+      pointer-events: none;
+    }
     }
 
     .et-hero-content {
