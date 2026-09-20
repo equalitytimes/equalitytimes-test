@@ -1418,3 +1418,133 @@ img{max-width:100%;display:block}
   .team-body,.team-note,.submission-panel{padding:24px}
   .team-body h2,.team-note h2,.write-layout h2,.submission-panel h2{font-size:28px}
 }
+
+
+/* =====================================================
+   EQUALITY TIMES — FINAL SHARED HEADER LOCK
+   One header system across every page
+   ===================================================== */
+
+.et-header{
+  background:#080d11 !important;
+  color:#fff !important;
+  position:relative !important;
+  z-index:10 !important;
+}
+
+.et-header-inner{
+  max-width:1180px !important;
+  width:auto !important;
+  min-height:88px !important;
+  margin:0 auto !important;
+  padding:0 28px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:30px !important;
+}
+
+.et-brand{
+  display:flex !important;
+  align-items:center !important;
+  flex-shrink:0 !important;
+}
+
+.et-brand img{
+  width:128px !important;
+  height:auto !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  display:block !important;
+}
+
+.et-brand-tagline{
+  display:block !important;
+  margin-top:7px !important;
+  color:#aeb7c2 !important;
+  font-size:11px !important;
+  line-height:1.25 !important;
+  letter-spacing:.5px !important;
+  white-space:nowrap !important;
+  font-weight:500 !important;
+}
+
+.et-nav{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-end !important;
+  gap:28px !important;
+  flex-wrap:wrap !important;
+}
+
+.et-nav a{
+  color:#fff !important;
+  font-size:15px !important;
+  line-height:1.2 !important;
+  font-weight:600 !important;
+  position:relative !important;
+  padding:31px 0 27px !important;
+  border-bottom:3px solid transparent !important;
+  transition:.2s ease !important;
+  white-space:nowrap !important;
+}
+
+.et-nav a:hover,
+.et-nav a.active{
+  color:#fff !important;
+  border-bottom-color:#f4c400 !important;
+}
+
+/* Remove the old second underline mechanism */
+.et-nav a.active::after{
+  content:none !important;
+  display:none !important;
+}
+
+.et-search{
+  font-size:24px !important;
+  line-height:1 !important;
+  margin-left:5px !important;
+}
+
+/* Same compact mobile header everywhere */
+@media (max-width:900px){
+  .et-header-inner{
+    min-height:auto !important;
+    padding:18px 22px !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+  }
+
+  .et-nav{
+    width:100% !important;
+    justify-content:flex-start !important;
+    gap:20px !important;
+    overflow-x:auto !important;
+    flex-wrap:nowrap !important;
+  }
+
+  .et-nav a{
+    padding:8px 0 12px !important;
+    white-space:nowrap !important;
+  }
+}
+
+@media (max-width:600px){
+  .et-header-inner{
+    padding:16px 20px !important;
+  }
+
+  .et-brand img{
+    width:128px !important;
+  }
+
+  .et-nav{
+    gap:16px !important;
+  }
+
+  .et-nav a{
+    font-size:14px !important;
+    padding:7px 0 11px !important;
+  }
+}
