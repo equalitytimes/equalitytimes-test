@@ -1,146 +1,638 @@
+---
+layout: null
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Equality Times</title>
-  <meta name="description" content="About Equality Times, its mission, values, and founder."/>
-  <link rel="stylesheet" href="assets/style.css"/>
+  <meta name="description" content="About Equality Times — legal education, research and public awareness exploring law, society, equality, technology and access to justice.">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+
+  <style>
+    :root{
+      --yellow:#f4c400;
+      --ink:#111923;
+      --muted:#667085;
+      --cream:#f8f7f3;
+      --white:#ffffff;
+      --line:#e5e7eb;
+      --dark:#080d11;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      background:var(--cream);
+      color:var(--ink);
+      font-family:Arial,Helvetica,sans-serif;
+      line-height:1.7;
+    }
+
+    a{color:inherit;text-decoration:none}
+
+    .et-header{
+      background:var(--dark);
+      color:#fff;
+      position:relative;
+      z-index:10;
+    }
+
+    .et-header-inner{
+      max-width:var(--max);
+      margin:auto;
+      min-height:88px;
+      padding:0 28px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:30px;
+    }
+
+    .et-brand{
+      display:flex;
+      align-items:center;
+      flex-shrink:0;
+    }
+
+    .et-brand img{
+      width:128px;
+      height:auto;
+      display:block;
+    }
+
+    .et-nav{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:34px;
+      flex-wrap:wrap;
+    }
+
+    .et-nav a{
+      color:#fff;
+      font-size:15px;
+      font-weight:600;
+      padding:31px 0 27px;
+      border-bottom:3px solid transparent;
+      transition:.2s ease;
+    }
+
+    .et-nav a:hover,
+    .et-nav a.active{
+      color:#fff;
+      border-bottom-color:var(--yellow);
+    }
+
+    .et-main{
+      min-height:65vh;
+    }
+
+    .et-about-hero{
+      background:var(--dark);
+      color:#fff;
+      padding:88px 28px 78px;
+    }
+
+    .et-container{
+      max-width:var(--max);
+      margin:auto;
+    }
+
+    .et-kicker{
+      display:flex;
+      align-items:center;
+      gap:13px;
+      color:var(--yellow);
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:2.5px;
+      text-transform:uppercase;
+      margin-bottom:22px;
+    }
+
+    .et-kicker:after{
+      content:"";
+      width:58px;
+      height:3px;
+      background:var(--yellow);
+      display:block;
+    }
+
+    .et-about-hero h1{
+      margin:0;
+      max-width:850px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(48px,7vw,82px);
+      line-height:.98;
+      letter-spacing:-2.5px;
+      font-weight:700;
+    }
+
+    .et-about-hero p{
+      max-width:720px;
+      margin:28px 0 0;
+      color:#d9dee5;
+      font-size:20px;
+      line-height:1.6;
+    }
+
+    .et-content{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:82px 28px 100px;
+    }
+
+    .et-intro{
+      max-width:900px;
+      margin-bottom:72px;
+    }
+
+    .et-section-label{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      color:#667085;
+      font-size:13px;
+      font-weight:700;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      margin-bottom:18px;
+    }
+
+    .et-section-label:before{
+      content:"";
+      width:34px;
+      height:3px;
+      background:var(--yellow);
+      display:block;
+    }
+
+    .et-intro h2,
+    .et-work h2,
+    .et-audience h2,
+    .et-approach h2,
+    .et-vision h2{
+      margin:0 0 20px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:42px;
+      line-height:1.12;
+      letter-spacing:-1px;
+    }
+
+    .et-intro p,
+    .et-audience p,
+    .et-approach p,
+    .et-vision p{
+      margin:0 0 18px;
+      color:#4f5b6b;
+      font-size:18px;
+      line-height:1.8;
+    }
+
+    .et-work{
+      margin-bottom:76px;
+    }
+
+    .et-work-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:1px;
+      background:var(--line);
+      border:1px solid var(--line);
+      margin-top:34px;
+    }
+
+    .et-work-item{
+      background:var(--white);
+      padding:34px;
+      min-height:220px;
+    }
+
+    .et-work-number{
+      color:var(--yellow);
+      font-size:14px;
+      font-weight:800;
+      letter-spacing:1px;
+      margin-bottom:16px;
+    }
+
+    .et-work-item h3{
+      margin:0 0 12px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:27px;
+      line-height:1.2;
+    }
+
+    .et-work-item p{
+      margin:0;
+      color:#5b6574;
+      font-size:16px;
+      line-height:1.7;
+    }
+
+    .et-two-col{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:70px;
+      padding-top:10px;
+      margin-bottom:72px;
+    }
+
+    .et-audience,
+    .et-approach{
+      border-top:1px solid var(--line);
+      padding-top:28px;
+    }
+
+    .et-vision{
+      border-top:1px solid var(--line);
+      padding-top:34px;
+      max-width:950px;
+    }
+
+    .et-vision strong{
+      color:var(--ink);
+    }
+
+    .et-footer{
+      background:var(--dark);
+      color:#fff;
+      padding:65px 28px 25px;
+    }
+
+    .et-footer-grid{
+      max-width:var(--max);
+      margin:auto;
+      display:grid;
+      grid-template-columns:1.5fr 1fr 1fr;
+      gap:60px;
+      padding-bottom:48px;
+    }
+
+    .et-footer-brand img{
+      width:145px;
+      height:auto;
+      display:block;
+      margin-bottom:22px;
+    }
+
+    .et-footer-brand p{
+      max-width:390px;
+      margin:0;
+      color:#aeb7c2;
+      line-height:1.7;
+    }
+
+    .et-footer h3{
+      margin:0 0 18px;
+      font-size:13px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:#fff;
+    }
+
+    .et-footer-links{
+      display:grid;
+      gap:10px;
+    }
+
+    .et-footer-links a{
+      color:#c8ced6;
+      font-size:15px;
+    }
+
+    .et-footer-links a:hover{
+      color:var(--yellow);
+    }
+
+    .et-socials{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .et-socials a{
+      width:42px;
+      height:42px;
+      border:1px solid #3a434d;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      transition:.2s ease;
+    }
+
+    .et-socials svg{
+      width:19px;
+      height:19px;
+      display:block;
+    }
+
+    .et-socials a:hover{
+      border-color:var(--yellow);
+      color:var(--yellow);
+    }
+
+    .et-footer-bottom{
+      max-width:var(--max);
+      margin:auto;
+      border-top:1px solid #252d35;
+      padding-top:22px;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      color:#8f99a5;
+      font-size:13px;
+    }
+
+    @media(max-width:900px){
+      .et-header-inner{
+        min-height:auto;
+        padding:18px 22px;
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .et-nav{
+        width:100%;
+        justify-content:flex-start;
+        gap:20px;
+      }
+
+      .et-nav a{
+        padding:8px 0;
+      }
+
+      .et-work-grid,
+      .et-two-col,
+      .et-footer-grid{
+        grid-template-columns:1fr;
+      }
+
+      .et-footer-grid{
+        gap:40px;
+      }
+    }
+
+    @media(max-width:600px){
+      .et-about-hero{
+        padding:60px 22px;
+      }
+
+      .et-content{
+        padding:60px 22px 75px;
+      }
+
+      .et-about-hero h1{
+        font-size:48px;
+        letter-spacing:-1.5px;
+      }
+
+      .et-about-hero p{
+        font-size:17px;
+      }
+
+      .et-intro h2,
+      .et-work h2,
+      .et-audience h2,
+      .et-approach h2,
+      .et-vision h2{
+        font-size:34px;
+      }
+
+      .et-work-item{
+        padding:28px 24px;
+      }
+
+      .et-footer{
+        padding-left:22px;
+        padding-right:22px;
+      }
+
+      .et-footer-bottom{
+        flex-direction:column;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="topbar">
-  <div class="container topbar-inner">
-    <a class="brand" href="index.html">
-      <div class="brand-logo"><img src="assets/logo.png" alt="Equality Times logo"></div>
-      <div>
-        <div class="brand-title">Equality Times</div>
-        <div class="brand-sub">Constitution • Equality • Human Rights • Legal Awareness</div>
-      </div>
+<header class="et-header">
+  <div class="et-header-inner">
+    <a class="et-brand" href="{{ '/' | relative_url }}" aria-label="Equality Times home">
+      <img src="{{ '/logo.png' | relative_url }}" alt="Equality Times">
     </a>
 
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a class="active" href="about.html">About</a>
-      <a href="articles/">Articles</a>
-      <a href="videos.html">Videos</a>
-      <a href="news.html">News & Stories</a>
-      <a href="research.html">Research</a>
-      <a href="contact.html">Contact</a>
+    <nav class="et-nav" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about.html' | relative_url }}" class="active">About</a>
+      <a href="{{ '/articles/' | relative_url }}">Articles</a>
+      <a href="{{ '/videos.html' | relative_url }}">Videos</a>
+      <a href="{{ '/research.html' | relative_url }}">Research</a>
+      <a href="{{ '/team.html' | relative_url }}">Our Team</a>
+      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">About Equality Times</h2>
-        <p class="section-note">Mission, values, and founder</p>
-      </div>
+<main class="et-main">
 
-      <div class="card">
-        <h3>What Equality Times is</h3>
-        <p>
-          Equality Times is a public legal education and rights-awareness platform. It explains constitutional values,
-          legal developments, and social justice issues in an accessible format for students, citizens, and communities.
-        </p>
-        <div style="height:12px"></div>
-        <p>
-          The platform aims to connect law with lived reality — especially where questions of caste, dignity, exclusion,
-          discrimination, rights, technology, and social justice are involved.
-        </p>
-      </div>
-
-      <div style="height:18px"></div>
-
-      <div class="grid-3">
-        <div class="card">
-          <h3>Mission</h3>
-          <p>To make legal knowledge accessible, useful, and socially meaningful through videos, explainers, and research.</p>
-        </div>
-        <div class="card">
-          <h3>Values</h3>
-          <p>Equality, justice, dignity, constitutional morality, and human rights are the core values of this platform.</p>
-        </div>
-        <div class="card">
-          <h3>Approach</h3>
-          <p>Evidence-led, public-interest oriented, and focused on clear communication rather than jargon.</p>
-        </div>
-      </div>
-
-      <div style="height:18px"></div>
-
-      <div class="founder-wrap">
-        <div class="founder-photo">
-          <img src="assets/founder.jpg" alt="Founder photo"
-            onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;founder-fallback&quot;>Upload <br> assets/founder.jpg <br> for founder photo</div>';">
-
-        </div>
-
-        <div class="founder-card">
-          <div class="tag-row">
-            <span class="tag">Founder</span>
-            <span class="tag">Law Student</span>
-            <span class="tag">Legal Education</span>
-          </div>
-
-          <h2 id="founderName" class="founder-name">Harshal Manoharrao Gawande</h2>
-          <p id="founderRole" class="founder-role">Law Student | Founder, Equality Times</p>
-
-          <p id="founderBio" class="founder-bio">
-            Harshal Manoharrao Gawande is a law student and the founder of Equality Times, a public legal education initiative focused on constitutional law, equality, human rights, and legal awareness. Through research-based explainers, videos, legal news, and public-interest analysis, he aims to make law understandable and accessible for students, citizens, and marginalized communities.
-          </p>
-
-          <div style="height:14px"></div>
-          <a class="btn btn-primary" href="contact.html">Contact</a>
-        </div>
-      </div>
-
-      <!-- ✅ Monika section goes BELOW founder-wrap (outside it) -->
-      <div style="height:18px"></div>
-
-      <div class="contrib-card">
-        <div class="contrib-head">
-          <div class="contrib-title">Contributor</div>
-          <div class="contrib-pill">Technology &amp; Research</div>
-        </div>
-
-        <div class="contrib-row">
-          <div class="contrib-avatar">MG</div>
-
-          <div class="contrib-info">
-            <div class="contrib-name">Monika Gawande</div>
-            <div class="contrib-role">Technology &amp; Research Contributor</div>
-            <p class="contrib-bio">
-              PhD candidate at the University of Wisconsin–Milwaukee working on energy-efficient Edge AI. Supports Equality Times
-              with technology-focused research and helps connect AI developments with public interest and rights awareness.
-            </p>
-          </div>
-
-          <div class="contrib-actions">
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/monika-g-8965a9345/" target="_blank" rel="noopener">
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </div>
-
+  <section class="et-about-hero">
+    <div class="et-container">
+      <div class="et-kicker">About Equality Times</div>
+      <h1>Law, research and public understanding.</h1>
+      <p>
+        A legal education, research and public awareness platform exploring the relationship between
+        law, society, equality, technology and access to justice.
+      </p>
     </div>
   </section>
+
+  <div class="et-content">
+
+    <section class="et-intro">
+      <div class="et-section-label">Who We Are</div>
+      <h2>Making legal knowledge more accessible.</h2>
+
+      <p>
+        <strong>Equality Times</strong> is a legal education, research and public awareness platform
+        exploring the relationship between <strong>law, society, equality, technology and access to justice</strong>.
+      </p>
+
+      <p>
+        The platform was created with a simple objective: to make legal knowledge more accessible
+        beyond traditional classrooms and legal institutions, while encouraging deeper public
+        understanding of important legal and constitutional issues.
+      </p>
+
+      <p>
+        Our work covers <strong>constitutional law, equality and human rights, criminal justice,
+        technology and artificial intelligence, cyber law and digital rights, and other emerging
+        legal issues</strong>.
+      </p>
+    </section>
+
+    <section class="et-work">
+      <div class="et-section-label">What We Do</div>
+      <h2>Our Work</h2>
+
+      <div class="et-work-grid">
+
+        <article class="et-work-item">
+          <div class="et-work-number">01</div>
+          <h3>Legal Education</h3>
+          <p>
+            We make complex legal concepts, constitutional provisions, legislation and judicial
+            decisions easier to understand through accessible legal explainers and educational resources.
+          </p>
+        </article>
+
+        <article class="et-work-item">
+          <div class="et-work-number">02</div>
+          <h3>Research &amp; Legal Analysis</h3>
+          <p>
+            We publish research, legal analysis and research-based articles examining contemporary
+            legal questions, drawing on legislation, judicial decisions, academic scholarship and
+            other credible sources.
+          </p>
+        </article>
+
+        <article class="et-work-item">
+          <div class="et-work-number">03</div>
+          <h3>Law, Technology &amp; AI</h3>
+          <p>
+            We examine emerging questions at the intersection of law and technology, including
+            artificial intelligence, cybersecurity, privacy, digital rights, cybercrime and the
+            regulation of emerging technologies.
+          </p>
+        </article>
+
+        <article class="et-work-item">
+          <div class="et-work-number">04</div>
+          <h3>Equality &amp; Human Rights</h3>
+          <p>
+            We explore questions of equality, discrimination, dignity, liberty and human rights
+            through legal and constitutional perspectives.
+          </p>
+        </article>
+
+        <article class="et-work-item">
+          <div class="et-work-number">05</div>
+          <h3>Public Legal Awareness</h3>
+          <p>
+            We develop accessible resources to help people better understand their rights,
+            responsibilities and the institutions that shape the legal system.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="et-two-col">
+
+      <section class="et-audience">
+        <div class="et-section-label">Who We Aim to Serve</div>
+        <h2>Access beyond the classroom.</h2>
+        <p>
+          Equality Times is intended for <strong>law students, first-generation learners,
+          educators and members of the wider public</strong>, with particular attention to people
+          and communities that have historically faced barriers to legal education and access to
+          legal information.
+        </p>
+        <p>
+          We believe that legal knowledge should be accessible not only to those already familiar
+          with the legal system, but also to those encountering it for the first time.
+        </p>
+      </section>
+
+      <section class="et-approach">
+        <div class="et-section-label">Our Approach</div>
+        <h2>Accuracy with accessibility.</h2>
+        <p>
+          We seek to combine <strong>legal accuracy, rigorous research and accessible communication</strong>.
+        </p>
+        <p>
+          Where appropriate, our work draws upon primary legal materials, including constitutional
+          provisions, legislation and judicial decisions, alongside academic and institutional sources.
+        </p>
+        <p>
+          We aim to distinguish legal fact from analysis and opinion and to approach complex legal
+          issues with intellectual openness and responsibility.
+        </p>
+      </section>
+
+    </div>
+
+    <section class="et-vision">
+      <div class="et-section-label">Our Vision</div>
+      <h2>Where law, research, technology and public understanding meet.</h2>
+      <p>
+        To build a credible and accessible platform where <strong>law, research, technology and
+        public understanding meet</strong>—contributing to a more informed engagement with rights,
+        justice and the changing legal landscape.
+      </p>
+    </section>
+
+  </div>
 </main>
 
-<footer class="footer">
-  <div class="container footer-inner">
-    <div class="footer-text">© <span id="yr"></span> Equality Times</div>
-    <div class="footer-text">Public Legal Education Platform • equalitytimesindia@gmail.com</div>
+<footer class="et-footer">
+  <div class="et-footer-grid">
+
+    <div class="et-footer-brand">
+      <img src="{{ '/logo.png' | relative_url }}" alt="Equality Times">
+      <p>
+        Legal Education · Research · Public Awareness
+      </p>
+    </div>
+
+    <div>
+      <h3>Explore</h3>
+      <div class="et-footer-links">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about.html' | relative_url }}">About</a>
+        <a href="{{ '/articles/' | relative_url }}">Articles</a>
+        <a href="{{ '/videos.html' | relative_url }}">Videos</a>
+        <a href="{{ '/research.html' | relative_url }}">Research</a>
+        <a href="{{ '/team.html' | relative_url }}">Our Team</a>
+        <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+      </div>
+    </div>
+
+    <div>
+      <h3>Connect</h3>
+      <div class="et-socials">
+        <a href="https://www.youtube.com/c/fightforequality" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.9V8.1l6.8 3.9-6.8 3.9Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/equality__times/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.7 6.3a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/TheEqualityTimes" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7.2v3h2.8v8h3.5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/equalitytimesindia" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.2 3.5A2.2 2.2 0 1 1 5.2 7a2.2 2.2 0 0 1 0-3.5ZM3.4 8.5h3.6V21H3.4V8.5Zm5.8 0h3.4v1.7h.1c.5-1 1.7-2.1 3.6-2.1 3.8 0 4.5 2.5 4.5 5.8V21h-3.6v-6.3c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21H9.2V8.5Z"/></svg>
+        </a>
+        <a href="https://x.com/equality__times" target="_blank" rel="noopener" aria-label="X" title="X">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.2 2H22l-8.3 9.5L23.5 22h-7.4l-5.8-7.6L3.7 22H0l8.9-10.2L.9 2h7.6l5.2 6.9L18.2 2Zm-1.3 18h2.1L7.6 3.9H5.4L16.9 20Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="et-footer-bottom">
+    <span>© {{ "now" | date: "%Y" }} Equality Times. All rights reserved.</span>
+    <span>Legal Education · Research · Public Awareness</span>
   </div>
 </footer>
 
-<script src="assets/site.js"></script>
-</body>
-</html>
-
-<script src="assets/site.js"></script>
 </body>
 </html>
