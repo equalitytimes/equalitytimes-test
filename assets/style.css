@@ -1674,3 +1674,125 @@ img{max-width:100%;display:block}
 }
 
 
+
+
+/* ===== PROFESSIONAL SITE FOOTER ===== */
+.professional-footer{
+  background:#080d11;
+  color:#fff;
+  padding:64px 0 24px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.professional-footer-inner{
+  width:min(1180px,calc(100% - 56px));
+  margin:0 auto;
+}
+.professional-footer-main{
+  display:grid;
+  grid-template-columns:1.8fr 1fr 1fr 1fr;
+  gap:54px;
+  padding-bottom:46px;
+}
+.professional-footer-brand img{
+  display:block;
+  width:145px;
+  height:auto;
+  margin:0 0 14px;
+}
+.professional-footer-tagline{
+  color:#d7dbe0;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:9px;
+  line-height:1.2;
+  font-weight:600;
+  letter-spacing:1.1px;
+  white-space:nowrap;
+  margin-bottom:18px;
+}
+.professional-footer-brand p{
+  max-width:410px;
+  margin:0;
+  color:#aeb7c2;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:14px;
+  line-height:1.7;
+}
+.professional-footer-column h4{
+  margin:2px 0 18px;
+  color:#f4c400;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:1.7px;
+  text-transform:uppercase;
+}
+.professional-footer-column a{
+  display:block;
+  width:max-content;
+  max-width:100%;
+  margin:0 0 11px;
+  color:#c8ced6;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:14px;
+  line-height:1.4;
+  text-decoration:none;
+  transition:color .18s ease;
+}
+.professional-footer-column a:hover{
+  color:#f4c400;
+}
+.professional-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.13);
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  color:#858f9a;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  line-height:1.5;
+}
+@media(max-width:900px){
+  .professional-footer-main{
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:42px 30px;
+  }
+  .professional-footer-brand{
+    grid-column:1/-1;
+  }
+}
+@media(max-width:600px){
+  .professional-footer{
+    padding:48px 0 22px;
+  }
+  .professional-footer-inner{
+    width:calc(100% - 32px);
+  }
+  .professional-footer-main{
+    grid-template-columns:1fr 1fr;
+    gap:34px 24px;
+  }
+  .professional-footer-brand{
+    grid-column:1/-1;
+  }
+  .professional-footer-brand img{
+    width:135px;
+  }
+  .professional-footer-tagline{
+    font-size:8px;
+    letter-spacing:.9px;
+  }
+  .professional-footer-brand p{
+    font-size:13px;
+  }
+  .professional-footer-column h4{
+    margin-bottom:14px;
+  }
+  .professional-footer-column a{
+    font-size:13px;
+  }
+  .professional-footer-bottom{
+    flex-direction:column;
+    gap:8px;
+  }
+}
