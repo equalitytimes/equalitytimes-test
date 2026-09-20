@@ -28,958 +28,183 @@ layout: null
       --max: 1180px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      background: var(--cream);
-      color: var(--ink);
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .et-container {
-      width: min(var(--max), calc(100% - 80px));
-      margin: 0 auto;
-    }
-
-    /* HEADER */
-
-    .et-header {
-      background: #090e12;
-      color: #fff;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-
-    .et-header-inner {
-      min-height: 82px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-    }
-
-    .et-brand {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.et-brand-tagline {
-  display: block;
-  margin-top: 7px;
-  font-size: 9px;
-  line-height: 1.25;
-  letter-spacing: .08em;
-  color: #aeb5bd;
-  white-space: nowrap;
-  font-weight: 500;
-}
-
-    .et-brand img {
-  width: 165px;
-  max-height: 68px;
-  object-fit: contain;
-  object-position: left center;
-}
-.et-brand-tagline{
-  display:block;
-  margin-top:7px;
-  font-size:13px;
-  line-height:1.25;
-  color:#aeb5bd;
-  white-space:nowrap;
-}
-    .et-brand-copy {
-      display: none;
-    }
-
-    .et-nav {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-    }
-
-    .et-nav a {
-      color: #fff;
-      font-size: 14px;
-      font-weight: 500;
-      position: relative;
-      padding: 31px 0 27px;
-    }
-
-    .et-nav a:hover,
-    .et-nav a.active {
-      color: #fff;
-    }
-
-    .et-search {
-      font-size: 24px;
-      line-height: 1;
-      margin-left: 5px;
-    }
-/* HERO */
-
-.et-hero {
-  min-height: 475px;
-  position: relative;
-  overflow: hidden;
-  background: #eef0ee;
-}
-
-.et-hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  background: #eef0ee;
-}
-
-.et-hero-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
-.et-hero-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    90deg,
-    rgba(248,247,243,.96) 0%,
-    rgba(248,247,243,.86) 28%,
-    rgba(248,247,243,.42) 48%,
-    rgba(248,247,243,.05) 68%
-  );
-  pointer-events: none;
-}
-
-.et-hero-content {
-  position: relative;
-  z-index: 10;
-  min-height: 475px;
-  display: flex;
-  align-items: center;
-}
-
-.et-hero-copy {
-  position: relative;
-  z-index: 11;
-  width: 52%;
-  padding: 65px 0;
-}
-    .et-eyebrow {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: #293543;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-
-    .et-eyebrow::after {
-      content: "";
-      width: 55px;
-      height: 2px;
-      background: var(--yellow);
-    }
-
-    .et-hero h1 {
-      margin: 0 0 22px;
-      max-width: 650px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(46px, 5vw, 70px);
-      line-height: .98;
-      letter-spacing: -2px;
-      font-weight: 700;
-    }
-
-    .et-hero-description {
-      max-width: 510px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 20px;
-      line-height: 1.45;
-      color: #27323e;
-      margin-bottom: 30px;
-    }
-
-    .et-actions {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .et-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      padding: 14px 22px;
-      border: 1px solid #18222d;
-      font-size: 14px;
-      font-weight: 700;
-      transition: .2s ease;
-    }
-
-    .et-btn-primary {
-      background: var(--yellow);
-      border-color: var(--yellow);
-      color: #111;
-    }
-
-    .et-btn-primary:hover {
-      background: #ffd51a;
-    }
-
-    .et-btn-secondary {
-      background: rgba(255,255,255,.78);
-    }
-
-    .et-btn-secondary:hover {
-      background: #fff;
-    }
-
-    .et-play {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: #111923;
-      color: #fff;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 9px;
-    }
-
-    /* SECTION */
-
-    .et-section {
-      padding: 55px 0;
-      background: var(--cream);
-    }
-
-    .et-section-head {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 30px;
-      margin-bottom: 27px;
-    }
-
-    .et-heading-wrap {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .et-heading-line {
-      width: 32px;
-      height: 3px;
-      background: var(--yellow);
-      flex: none;
-    }
-
-    .et-section h2 {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 34px;
-      line-height: 1;
-    }
-
-    .et-section-sub {
-      color: var(--muted);
-      font-size: 14px;
-      margin: 7px 0 0 46px;
-    }
-
-    .et-view-all {
-      font-size: 13px;
-      color: #293c52;
-      white-space: nowrap;
-    }
-
-    .et-view-all span {
-      margin-left: 7px;
-      font-size: 18px;
-    }
-
-    /* FOCUS */
-
-    .et-focus-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .et-focus-card {
-      padding: 27px 28px 28px 8px;
-      border-right: 1px solid #ddd5bd;
-    }
-
-    .et-focus-card:last-child {
-      border-right: 0;
-    }
-
-    .et-focus-icon {
-      font-size: 32px;
-      margin-bottom: 17px;
-    }
-
-    .et-focus-card h3 {
-      margin: 0 0 10px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 21px;
-      line-height: 1.15;
-    }
-
-    .et-focus-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    /* ARTICLES */
-
-    .et-feature-grid {
-      display: grid;
-      grid-template-columns: 1.65fr 1fr;
-      gap: 38px;
-    }
-
-    .et-feature-card {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      background: #fff;
-      border: 1px solid #e0dfda;
-    }
-
-    .et-feature-image {
-      min-height: 320px;
-      background:
-        linear-gradient(135deg, #111923, #5e6875);
-      overflow: hidden;
-    }
-
-    .et-feature-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .et-feature-content {
-      padding: 34px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .et-category {
-      color: #657080;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-    }
-
-    .et-feature-content h3 {
-      margin: 0 0 15px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 29px;
-      line-height: 1.1;
-    }
-
-    .et-feature-content p {
-      color: var(--muted);
-      line-height: 1.55;
-      font-size: 14px;
-      margin: 0 0 20px;
-    }
-
-    .et-meta {
-      color: #687384;
-      font-size: 12px;
-      margin-bottom: 25px;
-    }
-
-    .et-read {
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .et-latest-list {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .et-latest-item {
-      display: grid;
-      grid-template-columns: 115px 1fr;
-      gap: 16px;
-      padding: 0 0 18px;
-      margin-bottom: 18px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .et-latest-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .et-latest-image {
-      height: 78px;
-      background: #202933;
-      overflow: hidden;
-    }
-
-    .et-latest-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .et-latest-item h3 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.15;
-      margin: 4px 0 8px;
-    }
-
-    .et-latest-meta {
-      font-size: 11px;
-      color: #687384;
-    }
-
-    /* VIDEOS */
-
-    .et-video-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .et-video-card {
-      background: #fff;
-    }
-
-    .et-video-thumb {
-      position: relative;
-      height: 190px;
-      overflow: hidden;
-      background: #131a22;
-    }
-
-    .et-video-thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .et-video-play {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 48px;
-      height: 48px;
-      border: 2px solid #fff;
-      border-radius: 50%;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0,0,0,.45);
-    }
-
-    .et-video-title {
-      padding: 14px 4px 5px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.25;
-    }
-
-    /* RESEARCH */
-
-    .et-research-card {
-      display: grid;
-      grid-template-columns: 250px 1fr;
-      background: #fff;
-      border: 1px solid #deddd8;
-    }
-
-    .et-research-image {
-      min-height: 180px;
-      background:
-        linear-gradient(135deg, #111923, #777);
-      overflow: hidden;
-    }
-
-    .et-research-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .et-research-content {
-      padding: 30px;
-    }
-
-    .et-research-content h3 {
-      margin: 0 0 12px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 27px;
-    }
-
-    .et-research-content p {
-      color: var(--muted);
-      max-width: 700px;
-      line-height: 1.55;
-      margin-bottom: 20px;
-    }
-
-    /* FOOTER */
-
-    .et-footer {
-      background: #090e12;
-      color: #fff;
-      padding: 45px 0 25px;
-    }
-
-    .et-footer-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr 1fr;
-      gap: 40px;
-      padding-bottom: 35px;
-      border-bottom: 1px solid rgba(255,255,255,.14);
-    }
-
-    .et-footer-brand {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 25px;
-    }
-.et-footer-brand img {
-  width: 120px;
-  height: auto;
-  display: block;
-  margin-bottom: 22px;
-}
-    .et-footer-brand strong {
-      color: var(--yellow);
-    }
-
-    .et-footer small {
-      display: block;
-      color: #b5bcc4;
-      margin-top: 10px;
-      line-height: 1.6;
-    }
-
-    .et-footer h4 {
-      margin: 0 0 15px;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #fff;
-    }
-
-    .et-footer a {
-      display: block;
-      color: #c4cad0;
-      font-size: 13px;
-      margin-bottom: 10px;
-    }
-
-    .et-footer a:hover {
-      color: var(--yellow);
-    }
-
-    .et-copyright {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      padding-top: 20px;
-      color: #8e969f;
-      font-size: 11px;
-    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+    a { color: inherit; text-decoration: none; }
+
+    .et-container { width: min(var(--max), calc(100% - 80px)); margin: 0 auto; }
+
+    .et-header { background: #090e12; color: #fff; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .et-header-inner { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+    .et-brand { display: flex; align-items: center; gap: 14px; }
+    .et-brand-tagline { display: block; margin-top: 7px; font-size: 9px; line-height: 1.25; letter-spacing: .08em; color: #aeb5bd; white-space: nowrap; font-weight: 500; }
+    .et-brand img { width: 165px; max-height: 68px; object-fit: contain; object-position: left center; }
+    .et-brand-copy { display: none; }
+    .et-nav { display: flex; align-items: center; gap: 32px; }
+    .et-nav a { color: #fff; font-size: 14px; font-weight: 500; position: relative; padding: 31px 0 27px; }
+    .et-nav a:hover, .et-nav a.active { color: #fff; }
+    .et-search { font-size: 24px; line-height: 1; margin-left: 5px; }
+
+    .et-hero { min-height: 475px; position: relative; overflow: hidden; background: #eef0ee; }
+    .et-hero-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: #eef0ee; }
+    .et-hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+    .et-hero-bg::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(248,247,243,.96) 0%, rgba(248,247,243,.86) 28%, rgba(248,247,243,.42) 48%, rgba(248,247,243,.05) 68%); pointer-events: none; }
+    .et-hero-content { position: relative; z-index: 10; min-height: 475px; display: flex; align-items: center; }
+    .et-hero-copy { position: relative; z-index: 11; width: 52%; padding: 65px 0; }
+    .et-eyebrow { display: flex; align-items: center; gap: 12px; color: #293543; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px; }
+    .et-eyebrow::after { content: ""; width: 55px; height: 2px; background: var(--yellow); }
+    .et-hero h1 { margin: 0 0 22px; max-width: 650px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(46px, 5vw, 70px); line-height: .98; letter-spacing: -2px; font-weight: 700; }
+    .et-hero-description { max-width: 510px; font-family: Georgia, "Times New Roman", serif; font-size: 20px; line-height: 1.45; color: #27323e; margin-bottom: 30px; }
+    .et-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .et-btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 22px; border: 1px solid #18222d; font-size: 14px; font-weight: 700; transition: .2s ease; }
+    .et-btn-primary { background: var(--yellow); border-color: var(--yellow); color: #111; }
+    .et-btn-primary:hover { background: #ffd51a; }
+    .et-btn-secondary { background: rgba(255,255,255,.78); }
+    .et-btn-secondary:hover { background: #fff; }
+    .et-play { width: 22px; height: 22px; border-radius: 50%; background: #111923; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 9px; }
+
+    .et-section { padding: 55px 0; background: var(--cream); }
+    .et-section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 27px; }
+    .et-heading-wrap { display: flex; align-items: center; gap: 14px; }
+    .et-heading-line { width: 32px; height: 3px; background: var(--yellow); flex: none; }
+    .et-section h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 34px; line-height: 1; }
+    .et-section-sub { color: var(--muted); font-size: 14px; margin: 7px 0 0 46px; }
+    .et-view-all { font-size: 13px; color: #293c52; white-space: nowrap; }
+    .et-view-all span { margin-left: 7px; font-size: 18px; }
+
+    .et-focus-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .et-focus-card { padding: 27px 28px 28px 8px; border-right: 1px solid #ddd5bd; }
+    .et-focus-card:last-child { border-right: 0; }
+    .et-focus-icon { font-size: 32px; margin-bottom: 17px; }
+    .et-focus-card h3 { margin: 0 0 10px; font-family: Georgia, "Times New Roman", serif; font-size: 21px; line-height: 1.15; }
+    .et-focus-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+    .et-feature-grid { display: grid; grid-template-columns: 1.65fr 1fr; gap: 38px; }
+    .et-feature-card { display: grid; grid-template-columns: 1fr 1fr; background: #fff; border: 1px solid #e0dfda; }
+    .et-feature-image { min-height: 320px; background: linear-gradient(135deg, #111923, #5e6875); overflow: hidden; }
+    .et-feature-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .et-feature-content { padding: 34px; display: flex; flex-direction: column; justify-content: center; }
+    .et-category { color: #657080; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; }
+    .et-feature-content h3 { margin: 0 0 15px; font-family: Georgia, "Times New Roman", serif; font-size: 29px; line-height: 1.1; }
+    .et-feature-content p { color: var(--muted); line-height: 1.55; font-size: 14px; margin: 0 0 20px; }
+    .et-meta { color: #687384; font-size: 12px; margin-bottom: 25px; }
+    .et-read { font-size: 13px; font-weight: 700; }
+    .et-latest-list { display: flex; flex-direction: column; }
+    .et-latest-item { display: grid; grid-template-columns: 115px 1fr; gap: 16px; padding: 0 0 18px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
+    .et-latest-item:last-child { margin-bottom: 0; }
+    .et-latest-image { height: 78px; background: #202933; overflow: hidden; }
+    .et-latest-image img { width: 100%; height: 100%; object-fit: cover; }
+    .et-latest-item h3 { font-family: Georgia, "Times New Roman", serif; font-size: 17px; line-height: 1.15; margin: 4px 0 8px; }
+    .et-latest-meta { font-size: 11px; color: #687384; }
+
+    .et-video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .et-video-card { background: #fff; }
+    .et-video-thumb { position: relative; height: 190px; overflow: hidden; background: #131a22; }
+    .et-video-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .et-video-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 48px; height: 48px; border: 2px solid #fff; border-radius: 50%; color: #fff; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,.45); }
+    .et-video-title { padding: 14px 4px 5px; font-family: Georgia, "Times New Roman", serif; font-size: 17px; line-height: 1.25; }
+
+    .et-research-card { display: grid; grid-template-columns: 250px 1fr; background: #fff; border: 1px solid #deddd8; }
+    .et-research-image { min-height: 180px; background: linear-gradient(135deg, #111923, #777); overflow: hidden; }
+    .et-research-image img { width: 100%; height: 100%; object-fit: cover; }
+    .et-research-content { padding: 30px; }
+    .et-research-content h3 { margin: 0 0 12px; font-family: Georgia, "Times New Roman", serif; font-size: 27px; }
+    .et-research-content p { color: var(--muted); max-width: 700px; line-height: 1.55; margin-bottom: 20px; }
+
+    .et-footer { background: #090e12; color: #fff; padding: 45px 0 25px; }
+    .et-footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 35px; border-bottom: 1px solid rgba(255,255,255,.14); }
+    .et-footer-brand { font-family: Georgia, "Times New Roman", serif; font-size: 25px; }
+    .et-footer-brand img { width: 120px; height: auto; display: block; margin-bottom: 22px; }
+    .et-footer-brand strong { color: var(--yellow); }
+    .et-footer small { display: block; color: #b5bcc4; margin-top: 10px; line-height: 1.6; }
+    .et-footer h4 { margin: 0 0 15px; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #fff; }
+    .et-footer a { display: block; color: #c4cad0; font-size: 13px; margin-bottom: 10px; }
+    .et-footer a:hover { color: var(--yellow); }
+    .et-copyright { display: flex; justify-content: space-between; gap: 20px; padding-top: 20px; color: #8e969f; font-size: 11px; }
 
     @media (max-width: 900px) {
-      .et-container {
-        width: min(100% - 40px, var(--max));
-      }
-
-      .et-header-inner {
-        flex-direction: column;
-        padding: 18px 0;
-        align-items: flex-start;
-      }
-
-      .et-nav {
-        width: 100%;
-        overflow-x: auto;
-        gap: 22px;
-      }
-
-      .et-nav a {
-        padding: 8px 0 12px;
-        white-space: nowrap;
-      }
-
-      .et-hero-copy {
-        width: 75%;
-      }
-
-      .et-focus-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .et-focus-card:nth-child(2) {
-        border-right: 0;
-      }
-
-      .et-focus-card:nth-child(3),
-      .et-focus-card:nth-child(4) {
-        border-top: 1px solid var(--line);
-      }
-
-      .et-feature-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .et-video-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .et-footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
+      .et-container { width: min(100% - 40px, var(--max)); }
+      .et-header-inner { flex-direction: column; padding: 18px 0; align-items: flex-start; }
+      .et-nav { width: 100%; overflow-x: auto; gap: 22px; }
+      .et-nav a { padding: 8px 0 12px; white-space: nowrap; }
+      .et-hero-copy { width: 75%; }
+      .et-focus-grid { grid-template-columns: repeat(2, 1fr); }
+      .et-focus-card:nth-child(2) { border-right: 0; }
+      .et-focus-card:nth-child(3), .et-focus-card:nth-child(4) { border-top: 1px solid var(--line); }
+      .et-feature-grid { grid-template-columns: 1fr; }
+      .et-video-grid { grid-template-columns: 1fr; }
+      .et-footer-grid { grid-template-columns: 1fr 1fr; }
     }
 
     @media (max-width: 600px) {
-      .et-container {
-        width: calc(100% - 28px);
-      }
-
-      .et-hero {
-        min-height: 590px;
-      }
-
-      .et-hero-content {
-        min-height: 590px;
-        align-items: flex-end;
-      }
-
-      .et-hero-bg {
-        background-position: 65% center;
-        background-image:
-          linear-gradient(90deg,
-            rgba(248,247,243,.98) 0%,
-            rgba(248,247,243,.91) 55%,
-            rgba(248,247,243,.35) 100%),
-          url("{{ '/assets/hero-final.png' | relative_url }}");
-      }
-
-      .et-hero-copy {
-        width: 100%;
-        padding: 45px 0;
-      }
-
-      .et-hero h1 {
-        font-size: 43px;
-        letter-spacing: -1px;
-      }
-
-      .et-hero-description {
-        font-size: 17px;
-      }
-
-      .et-section {
-        padding: 40px 0;
-      }
-
-      .et-section h2 {
-        font-size: 29px;
-      }
-
-      .et-section-head {
-        align-items: flex-start;
-      }
-
-      .et-focus-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .et-focus-card {
-        border-right: 0;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .et-focus-card:last-child {
-        border-bottom: 0;
-      }
-
-      .et-feature-card {
-        grid-template-columns: 1fr;
-      }
-
-      .et-feature-image {
-        min-height: 230px;
-      }
-
-      .et-research-card {
-        grid-template-columns: 1fr;
-      }
-
-      .et-research-image {
-        min-height: 210px;
-      }
-
-      .et-footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .et-copyright {
-        flex-direction: column;
-      }
+      .et-container { width: calc(100% - 28px); }
+      .et-hero { min-height: 590px; }
+      .et-hero-content { min-height: 590px; align-items: flex-end; }
+      .et-hero-bg { background-position: 65% center; background-image: linear-gradient(90deg, rgba(248,247,243,.98) 0%, rgba(248,247,243,.91) 55%, rgba(248,247,243,.35) 100%), url("{{ '/assets/hero-final.png' | relative_url }}"); }
+      .et-hero-copy { width: 100%; padding: 45px 0; }
+      .et-hero h1 { font-size: 43px; letter-spacing: -1px; }
+      .et-hero-description { font-size: 17px; }
+      .et-section { padding: 40px 0; }
+      .et-section h2 { font-size: 29px; }
+      .et-section-head { align-items: flex-start; }
+      .et-focus-grid { grid-template-columns: 1fr; }
+      .et-focus-card { border-right: 0; border-bottom: 1px solid var(--line); }
+      .et-focus-card:last-child { border-bottom: 0; }
+      .et-feature-card { grid-template-columns: 1fr; }
+      .et-feature-image { min-height: 230px; }
+      .et-research-card { grid-template-columns: 1fr; }
+      .et-research-image { min-height: 210px; }
+      .et-footer-grid { grid-template-columns: 1fr; }
+      .et-copyright { flex-direction: column; }
     }
+
     @media (max-width: 600px) {
+      .et-container { padding-left: 20px; padding-right: 20px; }
+      .et-header-inner { padding: 16px 20px; }
+      .et-brand img { width: 140px; max-height: 58px; }
+      .et-nav { gap: 14px; flex-wrap: wrap; }
+      .et-nav a { font-size: 14px; padding: 6px 0; }
+      .et-hero { min-height: 520px; }
+      .et-hero-content { min-height: 520px; }
+      .et-hero-copy { width: 100%; padding: 55px 0; }
+      .et-hero-copy h1 { font-size: 42px; line-height: 1.08; }
+      .et-hero-copy p { font-size: 17px; line-height: 1.7; }
+      .et-hero-bg::after { background: linear-gradient(180deg, rgba(248,247,243,.95) 0%, rgba(248,247,243,.88) 55%, rgba(248,247,243,.55) 100%); }
+      .et-grid, .et-cards, .et-two-col { grid-template-columns: 1fr; }
+      .et-section { padding: 55px 20px; }
+      .et-section h2 { font-size: 34px; line-height: 1.15; }
+      .et-card { padding: 25px; }
+      .et-card h3 { font-size: 21px; }
+      .et-card p { font-size: 16px; line-height: 1.7; }
+      .et-footer-grid { grid-template-columns: 1fr; gap: 40px; }
+      .et-footer { padding-left: 20px; padding-right: 20px; }
+      .et-footer-bottom { flex-direction: column; gap: 10px; }
+    }
 
-  .et-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .et-header-inner {
-    padding: 16px 20px;
-  }
-
-  .et-brand img {
-    width: 140px;
-    max-height: 58px;
-  }
-
-  .et-nav {
-    gap: 14px;
-    flex-wrap: wrap;
-  }
-
-  .et-nav a {
-    font-size: 14px;
-    padding: 6px 0;
-  }
-
-  .et-hero {
-    min-height: 520px;
-  }
-
-  .et-hero-content {
-    min-height: 520px;
-  }
-
-  .et-hero-copy {
-    width: 100%;
-    padding: 55px 0;
-  }
-
-  .et-hero-copy h1 {
-    font-size: 42px;
-    line-height: 1.08;
-  }
-
-  .et-hero-copy p {
-    font-size: 17px;
-    line-height: 1.7;
-  }
-
-  .et-hero-bg::after {
-    background: linear-gradient(
-      180deg,
-      rgba(248,247,243,.95) 0%,
-      rgba(248,247,243,.88) 55%,
-      rgba(248,247,243,.55) 100%
-    );
-  }
-
-  .et-grid,
-  .et-cards,
-  .et-two-col {
-    grid-template-columns: 1fr;
-  }
-
-  .et-section {
-    padding: 55px 20px;
-  }
-
-  .et-section h2 {
-    font-size: 34px;
-    line-height: 1.15;
-  }
-
-  .et-card {
-    padding: 25px;
-  }
-
-  .et-card h3 {
-    font-size: 21px;
-  }
-
-  .et-card p {
-    font-size: 16px;
-    line-height: 1.7;
-  }
-
-  .et-footer-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .et-footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .et-footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-}
-  
-/* Stable site-wide header */
-.site-header{
-  background:#080d11 !important;
-  color:#fff !important;
-  width:100% !important;
-  position:relative !important;
-  z-index:100 !important;
-}
-.site-header-inner{
-  width:min(1180px,calc(100% - 56px)) !important;
-  min-height:88px !important;
-  margin:0 auto !important;
-  padding:0 !important;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:space-between !important;
-  gap:30px !important;
-}
-.site-brand{
-  display:flex !important;
-  flex-direction:column !important;
-  align-items:flex-start !important;
-  justify-content:center !important;
-  flex:0 0 auto !important;
-  gap:4px !important;
-  text-decoration:none !important;
-}
-.site-brand img{
-  display:block !important;
-  width:128px !important;
-  height:auto !important;
-  max-width:128px !important;
-  max-height:none !important;
-  object-fit:contain !important;
-}
-.site-brand-tagline{
-  display:block !important;
-  margin:0 !important;
-  color:#d7dbe0 !important;
-  font-family:Arial,Helvetica,sans-serif !important;
-  font-size:8.5px !important;
-  line-height:1 !important;
-  font-weight:600 !important;
-  letter-spacing:1.05px !important;
-  white-space:nowrap !important;
-  text-transform:uppercase !important;
-}
-.site-nav{
-  display:flex !important;
-  align-items:center !important;
-  justify-content:flex-end !important;
-  gap:28px !important;
-  flex:0 0 auto !important;
-}
-.site-nav a{
-  display:block !important;
-  position:relative !important;
-  box-sizing:border-box !important;
-  color:#fff !important;
-  text-decoration:none !important;
-  font-family:Arial,Helvetica,sans-serif !important;
-  font-size:15px !important;
-  line-height:1.2 !important;
-  font-weight:600 !important;
-  padding:31px 0 27px !important;
-  margin:0 !important;
-  border:0 !important;
-  border-bottom:3px solid transparent !important;
-  white-space:nowrap !important;
-}
-.site-nav a:hover,
-.site-nav a.active{
-  color:#fff !important;
-  border-bottom-color:#f4c400 !important;
-}
-.site-nav a::before,
-.site-nav a::after{
-  content:none !important;
-  display:none !important;
-}
-@media(max-width:900px){
-  .site-header-inner{
-    width:calc(100% - 44px) !important;
-    min-height:auto !important;
-    padding:18px 0 !important;
-    flex-direction:column !important;
-    align-items:flex-start !important;
-  }
-  .site-brand-tagline{
-    font-size:8px !important;
-  }
-  .site-nav{
-    width:100% !important;
-    justify-content:flex-start !important;
-    gap:20px !important;
-    overflow-x:auto !important;
-    flex-wrap:nowrap !important;
-  }
-  .site-nav a{
-    font-size:15px !important;
-    padding:8px 0 12px !important;
-  }
-}
-@media(max-width:600px){
-  .site-header-inner{
-    width:calc(100% - 32px) !important;
-    padding:16px 0 !important;
-  }
-  .site-brand img{width:128px !important;}
-  .site-brand-tagline{
-    font-size:7.5px !important;
-    letter-spacing:.8px !important;
-  }
-  .site-nav{gap:16px !important;}
-  .site-nav a{
-    font-size:14px !important;
-    padding:7px 0 11px !important;
-  }
-}
-
-</style>
-    <link rel="icon" type="image/png" href="/equalitytimes-test/assets/logo-new.png">
+    .site-header{background:#080d11 !important;color:#fff !important;width:100% !important;position:relative !important;z-index:100 !important;}
+    .site-header-inner{width:min(1180px,calc(100% - 56px)) !important;min-height:88px !important;margin:0 auto !important;padding:0 !important;display:flex !important;align-items:center !important;justify-content:space-between !important;gap:30px !important;}
+    .site-brand{display:flex !important;flex-direction:column !important;align-items:flex-start !important;justify-content:center !important;flex:0 0 auto !important;gap:4px !important;text-decoration:none !important;}
+    .site-brand img{display:block !important;width:128px !important;height:auto !important;max-width:128px !important;max-height:none !important;object-fit:contain !important;}
+    .site-brand-tagline{display:block !important;margin:0 !important;color:#d7dbe0 !important;font-family:Arial,Helvetica,sans-serif !important;font-size:8.5px !important;line-height:1 !important;font-weight:600 !important;letter-spacing:1.05px !important;white-space:nowrap !important;text-transform:uppercase !important;}
+    .site-nav{display:flex !important;align-items:center !important;justify-content:flex-end !important;gap:28px !important;flex:0 0 auto !important;}
+    .site-nav a{display:block !important;position:relative !important;box-sizing:border-box !important;color:#fff !important;text-decoration:none !important;font-family:Arial,Helvetica,sans-serif !important;font-size:15px !important;line-height:1.2 !important;font-weight:600 !important;padding:31px 0 27px !important;margin:0 !important;border:0 !important;border-bottom:3px solid transparent !important;white-space:nowrap !important;}
+    .site-nav a:hover,.site-nav a.active{color:#fff !important;border-bottom-color:#f4c400 !important;}
+    .site-nav a::before,.site-nav a::after{content:none !important;display:none !important;}
+    @media(max-width:900px){
+      .site-header-inner{width:calc(100% - 44px) !important;min-height:auto !important;padding:18px 0 !important;flex-direction:column !important;align-items:flex-start !important;}
+      .site-brand-tagline{font-size:8px !important;}
+      .site-nav{width:100% !important;justify-content:flex-start !important;gap:20px !important;overflow-x:auto !important;flex-wrap:nowrap !important;}
+      .site-nav a{font-size:15px !important;padding:8px 0 12px !important;}
+    }
+    @media(max-width:600px){
+      .site-header-inner{width:calc(100% - 32px) !important;padding:16px 0 !important;}
+      .site-brand img{width:128px !important;}
+      .site-brand-tagline{font-size:7.5px !important;letter-spacing:.8px !important;}
+      .site-nav{gap:16px !important;}
+      .site-nav a{font-size:14px !important;padding:7px 0 11px !important;}
+    }
+  </style>
+  <link rel="icon" type="image/png" href="/equalitytimes-test/assets/logo-new.png">
 </head>
 
 <body>
@@ -1002,425 +227,134 @@ layout: null
   </div>
 </header>
 
-
 <main>
-
-  <!-- HERO -->
   <section class="et-hero">
-
     <div class="et-hero-bg">
-  <img src="{{ '/assets/hero-final.png' | relative_url }}" alt="Equality Times hero" loading="eager" fetchpriority="high">
-</div>
+      <img src="{{ '/assets/hero-final.png' | relative_url }}" alt="Equality Times hero" loading="eager" fetchpriority="high">
+    </div>
 
     <div class="et-container et-hero-content">
-
       <div class="et-hero-copy">
-
         <div class="et-eyebrow">
           Legal Education
           <span>•</span>
           Research
           <span>•</span>
           Public Awareness
-         </div>
+        </div>
 
-        <h1>Understanding Law Beyond the Classroom</h1>
+        <h1>Making Law Understandable. Making Legal Awareness Accessible.</h1>
 
         <p class="et-hero-description">
           Legal education and public awareness for a more equal and informed society.
         </p>
 
         <div class="et-actions">
-          <a href="{{ '/articles/' | relative_url }}"
-             class="et-btn et-btn-primary">
-            Explore Articles →
-          </a>
-
-          <a href="{{ '/videos/' | relative_url }}"
-             class="et-btn et-btn-secondary">
-            <span class="et-play">▶</span>
-            Watch Videos
-          </a>
+          <a href="{{ '/articles/' | relative_url }}" class="et-btn et-btn-primary">Explore Articles →</a>
+          <a href="{{ '/videos/' | relative_url }}" class="et-btn et-btn-secondary"><span class="et-play">▶</span>Watch Videos</a>
         </div>
-
       </div>
-
     </div>
   </section>
 
-
-  <!-- OUR FOCUS -->
   <section class="et-section">
-
     <div class="et-container">
-
       <div class="et-section-head">
-
         <div>
-          <div class="et-heading-wrap">
-            <span class="et-heading-line"></span>
-            <h2>Our Focus</h2>
-          </div>
-
-          <p class="et-section-sub">
-            Key areas of legal education at Equality Times.
-          </p>
+          <div class="et-heading-wrap"><span class="et-heading-line"></span><h2>Our Focus</h2></div>
+          <p class="et-section-sub">Key areas of legal education at Equality Times.</p>
         </div>
-
-        <a href="{{ '/articles/' | relative_url }}" class="et-view-all">
-          Explore all topics <span>→</span>
-        </a>
-
+        <a href="{{ '/articles/' | relative_url }}" class="et-view-all">Explore all topics <span>→</span></a>
       </div>
-
-
       <div class="et-focus-grid">
-
-        <div class="et-focus-card">
-          <div class="et-focus-icon">⚖</div>
-          <h3>Constitutional Law</h3>
-          <p>Rights, institutions and constitutional principles.</p>
-        </div>
-
-        <div class="et-focus-card">
-          <div class="et-focus-icon">◉</div>
-          <h3>Equality & Anti-Discrimination</h3>
-          <p>Caste, social justice and legal remedies.</p>
-        </div>
-
-        <div class="et-focus-card">
-          <div class="et-focus-icon">⚖</div>
-          <h3>Human Rights</h3>
-          <p>Dignity, liberty and rights for all.</p>
-        </div>
-
-        <div class="et-focus-card">
-          <div class="et-focus-icon">▣</div>
-          <h3>Technology & Cyber Law</h3>
-          <p>AI, technology, cyber law, privacy and emerging legal issues.</p>
-        </div>
-
+        <div class="et-focus-card"><div class="et-focus-icon">⚖</div><h3>Constitutional Law</h3><p>Rights, institutions and constitutional principles.</p></div>
+        <div class="et-focus-card"><div class="et-focus-icon">◉</div><h3>Equality & Anti-Discrimination</h3><p>Caste, social justice and legal remedies.</p></div>
+        <div class="et-focus-card"><div class="et-focus-icon">⚖</div><h3>Human Rights</h3><p>Dignity, liberty and rights for all.</p></div>
+        <div class="et-focus-card"><div class="et-focus-icon">▣</div><h3>Technology & Cyber Law</h3><p>AI, technology, cyber law, privacy and emerging legal issues.</p></div>
       </div>
-
     </div>
   </section>
 
-
-  <!-- FEATURED ARTICLE + LATEST ARTICLES -->
   <section class="et-section">
-
     <div class="et-container">
-
       <div class="et-feature-grid">
-
         <div>
-
-          <div class="et-section-head">
-            <div class="et-heading-wrap">
-              <span class="et-heading-line"></span>
-              <h2>Featured Article</h2>
-            </div>
-          </div>
-
-
+          <div class="et-section-head"><div class="et-heading-wrap"><span class="et-heading-line"></span><h2>Featured Article</h2></div></div>
           {% assign featured = site.posts.first %}
-
           {% if featured %}
-
           <a href="{{ featured.url | relative_url }}" class="et-feature-card">
-
             <div class="et-feature-image">
-
-              {% if featured.cover_image %}
-              <img src="{{ featured.cover_image | relative_url }}"
-                   alt="{{ featured.title }}">
-              {% else %}
-              <img src="{{ '/assets/hero-final.png' | relative_url }}"
-                   alt="{{ featured.title }}">
-              {% endif %}
-
+              {% if featured.cover_image %}<img src="{{ featured.cover_image | relative_url }}" alt="{{ featured.title }}">{% else %}<img src="{{ '/assets/hero-final.png' | relative_url }}" alt="{{ featured.title }}">{% endif %}
             </div>
-
             <div class="et-feature-content">
-
-              <div class="et-category">
-                {{ featured.category | default: "LEGAL EDUCATION" }}
-              </div>
-
+              <div class="et-category">{{ featured.category | default: "LEGAL EDUCATION" }}</div>
               <h3>{{ featured.title }}</h3>
-
-              <p>
-                {{ featured.description |
-                   default: featured.excerpt |
-                   strip_html |
-                   truncate: 180 }}
-              </p>
-
-              <div class="et-meta">
-                {% if featured.author %}
-                  {{ featured.author }}
-                {% else %}
-                  Equality Times
-                {% endif %}
-                &nbsp; | &nbsp;
-                {{ featured.date | date: "%d %b %Y" }}
-              </div>
-
-              <div class="et-read">
-                Read Article →
-              </div>
-
+              <p>{{ featured.description | default: featured.excerpt | strip_html | truncate: 180 }}</p>
+              <div class="et-meta">{% if featured.author %}{{ featured.author }}{% else %}Equality Times{% endif %}&nbsp; | &nbsp;{{ featured.date | date: "%d %b %Y" }}</div>
+              <div class="et-read">Read Article →</div>
             </div>
-
           </a>
-
           {% else %}
-
           <div class="et-feature-card">
-
-            <div class="et-feature-image">
-              <img src="{{ '/assets/hero-final.png' | relative_url }}"
-                   alt="Equality Times">
-            </div>
-
-            <div class="et-feature-content">
-              <div class="et-category">LEGAL EDUCATION</div>
-              <h3>Legal Education Beyond the Classroom</h3>
-              <p>
-                Explore constitutional law, equality, human rights and legal awareness.
-              </p>
-            </div>
-
+            <div class="et-feature-image"><img src="{{ '/assets/hero-final.png' | relative_url }}" alt="Equality Times"></div>
+            <div class="et-feature-content"><div class="et-category">LEGAL EDUCATION</div><h3>Legal Education Beyond the Classroom</h3><p>Explore constitutional law, equality, human rights and legal awareness.</p></div>
           </div>
-
           {% endif %}
-
         </div>
 
-
         <div>
-
-          <div class="et-section-head">
-
-            <div class="et-heading-wrap">
-              <span class="et-heading-line"></span>
-              <h2>Latest Articles</h2>
-            </div>
-
-            <a href="{{ '/articles/' | relative_url }}" class="et-view-all">
-              View all →
-            </a>
-
-          </div>
-
-
+          <div class="et-section-head"><div class="et-heading-wrap"><span class="et-heading-line"></span><h2>Latest Articles</h2></div><a href="{{ '/articles/' | relative_url }}" class="et-view-all">View all →</a></div>
           <div class="et-latest-list">
-
             {% assign latest_count = 0 %}
-
             {% for post in site.posts limit:4 %}
-
               {% if latest_count < 4 %}
-
               <a href="{{ post.url | relative_url }}" class="et-latest-item">
-
                 <div class="et-latest-image">
-
-                  {% if post.cover_image %}
-                  <img src="{{ post.cover_image | relative_url }}"
-                       alt="{{ post.title }}">
-                  {% else %}
-                  <img src="{{ '/assets/hero-final.png' | relative_url }}"
-                       alt="{{ post.title }}">
-                  {% endif %}
-
+                  {% if post.cover_image %}<img src="{{ post.cover_image | relative_url }}" alt="{{ post.title }}">{% else %}<img src="{{ '/assets/hero-final.png' | relative_url }}" alt="{{ post.title }}">{% endif %}
                 </div>
-
-                <div>
-
-                  <div class="et-category">
-                    {{ post.category | default: "LEGAL" }}
-                  </div>
-
-                  <h3>{{ post.title }}</h3>
-
-                  <div class="et-latest-meta">
-                    {{ post.date | date: "%d %b %Y" }}
-                  </div>
-
-                </div>
-
+                <div><div class="et-category">{{ post.category | default: "LEGAL" }}</div><h3>{{ post.title }}</h3><div class="et-latest-meta">{{ post.date | date: "%d %b %Y" }}</div></div>
               </a>
-
               {% assign latest_count = latest_count | plus: 1 %}
-
               {% endif %}
-
             {% endfor %}
-
           </div>
-
         </div>
-
       </div>
-
     </div>
   </section>
 
-
-  <!-- VIDEOS -->
   <section class="et-section">
-
     <div class="et-container">
-
       <div class="et-section-head">
-
-        <div>
-          <div class="et-heading-wrap">
-            <span class="et-heading-line"></span>
-            <h2>Latest Videos</h2>
-          </div>
-        </div>
-
-        <a href="{{ '/videos/' | relative_url }}" class="et-view-all">
-          View all videos →
-        </a>
-
+        <div><div class="et-heading-wrap"><span class="et-heading-line"></span><h2>Latest Videos</h2></div></div>
+        <a href="{{ '/videos/' | relative_url }}" class="et-view-all">View all videos →</a>
       </div>
-
-
       <div id="videosFeatured" class="et-video-grid">
-
-        <div class="et-video-card">
-
-          <a href="{{ '/videos/' | relative_url }}">
-
-            <div class="et-video-thumb">
-
-              <img src="{{ '/assets/hero-final.png' | relative_url }}"
-                   alt="Equality Times videos">
-
-              <div class="et-video-play">▶</div>
-
-            </div>
-
-            <div class="et-video-title">
-              Legal Awareness for a Stronger Society
-            </div>
-
-          </a>
-
-        </div>
-
-
-        <div class="et-video-card">
-
-          <a href="{{ '/videos/' | relative_url }}">
-
-            <div class="et-video-thumb">
-
-              <img src="{{ '/assets/hero-final.png' | relative_url }}"
-                   alt="Equality Times videos">
-
-              <div class="et-video-play">▶</div>
-
-            </div>
-
-            <div class="et-video-title">
-              Caste, Equality and the Law
-            </div>
-
-          </a>
-
-        </div>
-
-
-        <div class="et-video-card">
-
-          <a href="{{ '/videos/' | relative_url }}">
-
-            <div class="et-video-thumb">
-
-              <img src="{{ '/assets/hero-final.png' | relative_url }}"
-                   alt="Equality Times videos">
-
-              <div class="et-video-play">▶</div>
-
-            </div>
-
-            <div class="et-video-title">
-              Constitution Basics
-            </div>
-
-          </a>
-
-        </div>
-
+        <div class="et-video-card"><a href="{{ '/videos/' | relative_url }}"><div class="et-video-thumb"><img src="{{ '/assets/hero-final.png' | relative_url }}" alt="Equality Times videos"><div class="et-video-play">▶</div></div><div class="et-video-title">Legal Awareness for a Stronger Society</div></a></div>
+        <div class="et-video-card"><a href="{{ '/videos/' | relative_url }}"><div class="et-video-thumb"><img src="{{ '/assets/hero-final.png' | relative_url }}" alt="Equality Times videos"><div class="et-video-play">▶</div></div><div class="et-video-title">Caste, Equality and the Law</div></a></div>
+        <div class="et-video-card"><a href="{{ '/videos/' | relative_url }}"><div class="et-video-thumb"><img src="{{ '/assets/hero-final.png' | relative_url }}" alt="Equality Times videos"><div class="et-video-play">▶</div></div><div class="et-video-title">Constitution Basics</div></a></div>
       </div>
-
     </div>
   </section>
 
-
-  <!-- RESEARCH -->
   <section class="et-section">
-
     <div class="et-container">
-
       <div class="et-section-head">
-
-        <div>
-          <div class="et-heading-wrap">
-            <span class="et-heading-line"></span>
-            <h2>Research Spotlight</h2>
-          </div>
-        </div>
-
-        <a href="{{ '/research/' | relative_url }}" class="et-view-all">
-          Explore all research →
-        </a>
-
+        <div><div class="et-heading-wrap"><span class="et-heading-line"></span><h2>Research Spotlight</h2></div></div>
+        <a href="{{ '/research/' | relative_url }}" class="et-view-all">Explore all research →</a>
       </div>
-
-
       <div class="et-research-card">
-
-        <div class="et-research-image">
-
-          <img src="{{ '/assets/hero-final.png' | relative_url }}"
-               alt="Equality Times research">
-
-        </div>
-
+        <div class="et-research-image"><img src="{{ '/assets/hero-final.png' | relative_url }}" alt="Equality Times research"></div>
         <div class="et-research-content">
-
-          <div class="et-category">
-            RESEARCH PAPER
-          </div>
-
+          <div class="et-category">RESEARCH PAPER</div>
           <h3>Artificial Intelligence and Right to Equality</h3>
-
-          <p>
-            Legal research examining artificial intelligence through the
-            lens of equality, fairness and constitutional rights.
-          </p>
-
-          <a href="{{ '/research/' | relative_url }}"
-             class="et-btn et-btn-primary">
-            Explore Research →
-          </a>
-
+          <p>Legal research examining artificial intelligence through the lens of equality, fairness and constitutional rights.</p>
+          <a href="{{ '/research/' | relative_url }}" class="et-btn et-btn-primary">Explore Research →</a>
         </div>
-
       </div>
-
     </div>
   </section>
-
 </main>
-
-
-<!-- FOOTER -->
 
 <footer class="professional-footer">
   <div class="professional-footer-inner">
@@ -1430,39 +364,14 @@ layout: null
         <div class="professional-footer-tagline">LEGAL EDUCATION &nbsp;•&nbsp; RESEARCH &nbsp;•&nbsp; PUBLIC AWARENESS</div>
         <p>A legal education, research and public awareness platform exploring law, equality, human rights, technology and access to justice.</p>
       </div>
-
       <div class="professional-footer-column">
         <h4>Explore</h4>
-        <a href="/equalitytimes-test/">Home</a>
-        <a href="/equalitytimes-test/about/">About</a>
-        <a href="/equalitytimes-test/articles/">Articles</a>
-        <a href="/equalitytimes-test/videos/">Videos</a>
-        <a href="/equalitytimes-test/research/">Research</a>
-        <a href="/equalitytimes-test/team/">Our Team</a>
-        <a href="/equalitytimes-test/contact/">Contact</a>
+        <a href="/equalitytimes-test/">Home</a><a href="/equalitytimes-test/about/">About</a><a href="/equalitytimes-test/articles/">Articles</a><a href="/equalitytimes-test/videos/">Videos</a><a href="/equalitytimes-test/research/">Research</a><a href="/equalitytimes-test/team/">Our Team</a><a href="/equalitytimes-test/contact/">Contact</a>
       </div>
-
-      <div class="professional-footer-column">
-        <h4>Contribute</h4>
-        <a href="/equalitytimes-test/write/">Write for Equality Times</a>
-        <a href="/equalitytimes-test/write/">Submission Guidelines</a>
-      </div>
-
-      <div class="professional-footer-column">
-        <h4>Connect</h4>
-        <a href="https://www.youtube.com/c/fightforequality" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://www.instagram.com/equality__times/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.linkedin.com/company/equalitytimesindia" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.facebook.com/TheEqualityTimes" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://x.com/equality__times" target="_blank" rel="noopener">X</a>
-        <a href="mailto:equalitytimesindia@gmail.com">Email</a>
-      </div>
+      <div class="professional-footer-column"><h4>Contribute</h4><a href="/equalitytimes-test/write/">Write for Equality Times</a><a href="/equalitytimes-test/write/">Submission Guidelines</a></div>
+      <div class="professional-footer-column"><h4>Connect</h4><a href="https://www.youtube.com/c/fightforequality" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/equality__times/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/equalitytimesindia" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/TheEqualityTimes" target="_blank" rel="noopener">Facebook</a><a href="https://x.com/equality__times" target="_blank" rel="noopener">X</a><a href="mailto:equalitytimesindia@gmail.com">Email</a></div>
     </div>
-
-    <div class="professional-footer-bottom">
-      <span>© 2026 Equality Times. All rights reserved.</span>
-      <span>Legal Education · Research · Public Awareness</span>
-    </div>
+    <div class="professional-footer-bottom"><span>© 2026 Equality Times. All rights reserved.</span><span>Legal Education · Research · Public Awareness</span></div>
   </div>
 </footer>
 
