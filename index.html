@@ -862,14 +862,12 @@ layout: null
 
 <body>
 
-<header class="et-header">
-  <div class="et-container et-header-inner">
-
-   <a href="{{ '/' | relative_url }}" class="et-brand">
-  <img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times">
-</a>
-
-    <nav class="et-nav">
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Equality Times home">
+      <img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times">
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}" class="active">Home</a>
       <a href="{{ '/about.html' | relative_url }}">About</a>
       <a href="{{ '/articles/' | relative_url }}">Articles</a>
@@ -877,9 +875,7 @@ layout: null
       <a href="{{ '/research.html' | relative_url }}">Research</a>
       <a href="{{ '/team.html' | relative_url }}">Our Team</a>
       <a href="{{ '/contact.html' | relative_url }}">Contact</a>
-      <span class="et-search">⌕</span>
     </nav>
-
   </div>
 </header>
 
