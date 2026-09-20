@@ -5,6 +5,7 @@ baseurl: "/equalitytimes-test"
 permalink: /articles/:title/
 markdown: kramdown
 future: false
+timezone: Asia/Kolkata
 plugins: []
 
 exclude:
