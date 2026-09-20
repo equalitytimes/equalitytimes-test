@@ -1,99 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | Equality Times</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | escape }}"/>
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"/>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-<header class="topbar">
-  <div class="container topbar-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">
-      <div class="brand-logo"><img src="{{ '/assets/logo.png' | relative_url }}" alt="Equality Times logo"></div>
+
+<header class="et-header">
+  <div class="et-header-inner">
+    <a class="et-brand" href="{{ '/' | relative_url }}" aria-label="Equality Times home">
       <div>
-        <div class="brand-title">Equality Times</div>
-        <div class="brand-sub">Constitution • Equality • Human Rights • Legal Awareness</div>
+        <img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times">
+        <span class="et-brand-tagline">Legal Education · Research · Public Awareness</span>
       </div>
     </a>
-    <nav class="nav">
+    <nav class="et-nav" aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/about.html' | relative_url }}">About</a>
-      <a class="active" href="{{ '/articles/' | relative_url }}">Articles</a>
+      <a href="{{ '/articles/' | relative_url }}" class="active">Articles</a>
       <a href="{{ '/videos.html' | relative_url }}">Videos</a>
-      <a href="{{ '/news.html' | relative_url }}">News & Stories</a>
       <a href="{{ '/research.html' | relative_url }}">Research</a>
+      <a href="{{ '/team.html' | relative_url }}">Our Team</a>
       <a href="{{ '/contact.html' | relative_url }}">Contact</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <article class="article-page">
-    <div class="container article-shell">
-      <div class="article-main">
-        <div class="article-breadcrumb">
-          <a href="{{ '/' | relative_url }}">Home</a>
-          <span>›</span>
-          <a href="{{ '/articles/' | relative_url }}">Articles</a>
-          <span>›</span>
-          {{ page.category | default: "Article" }}
-        </div>
-
-        <div class="article-category">{{ page.category | default: "Article" }}</div>
-        <h1 class="article-title">{{ page.title }}</h1>
-        {% if page.excerpt %}<p class="article-excerpt">{{ page.excerpt }}</p>{% endif %}
-
-        <div class="article-meta">
-          <div><strong>{{ page.author | default: "Equality Times" }}</strong><br><span>{{ page.date | date: "%d %B %Y" }}</span></div>
-        </div>
-
-        {% if page.cover_image %}
-          <figure class="article-cover">
-            <img src="{{ page.cover_image | relative_url }}" alt="{{ page.title | escape }}">
-          </figure>
-        {% endif %}
-
-        <div class="article-content">
-          {{ content }}
-        </div>
-
-        {% if page.tags %}
-          <div class="article-tags">
-            {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
-          </div>
-        {% endif %}
+<main class="article-page">
+  <div class="container article-shell">
+    <article class="article-main">
+      <div class="article-breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a><span>›</span>
+        <a href="{{ '/articles/' | relative_url }}">Articles</a><span>›</span>
+        {{ page.category | default: "Article" }}
       </div>
 
-      <aside class="article-sidebar">
-        <div class="article-sidebar-card">
-          <h3>Equality Times</h3>
-          <p>A public legal education platform focused on law, equality, society, human rights, and legal awareness.</p>
-          <a class="btn btn-primary" href="{{ '/about.html' | relative_url }}">About Equality Times</a>
-        </div>
+      <div class="article-category">{{ page.category | default: "Article" }}</div>
+      <h1 class="article-title">{{ page.title }}</h1>
+      {% if page.excerpt %}<p class="article-excerpt">{{ page.excerpt }}</p>{% endif %}
 
-        <div class="article-sidebar-card">
-          <h3>Explore Articles</h3>
-          <a class="article-sidebar-link" href="{{ '/articles/' | relative_url }}">All Articles →</a>
-          <a class="article-sidebar-link" href="{{ '/research.html' | relative_url }}">Research →</a>
-          <a class="article-sidebar-link" href="{{ '/news.html' | relative_url }}">News & Stories →</a>
-        </div>
+      <div class="article-meta">
+        <strong>{{ page.author | default: "Equality Times" }}</strong><br>
+        <span>{{ page.date | date: "%d %B %Y" }}</span>
+      </div>
 
-        <div class="article-sidebar-card article-submit-card">
-          <h3>Write for Equality Times</h3>
-          <p>Have a legal analysis, research article, opinion, or story to share?</p>
-          <a class="btn btn-secondary" href="{{ '/contact.html' | relative_url }}">Contact Us</a>
-        </div>
-      </aside>
-    </div>
-  </article>
+      {% if page.cover_image %}
+      <figure class="article-cover">
+        <img src="{{ page.cover_image | relative_url }}" alt="{{ page.title | escape }}">
+      </figure>
+      {% endif %}
+
+      <div class="article-content">{{ content }}</div>
+
+      {% if page.tags %}
+      <div class="article-tags">
+        {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      </div>
+      {% endif %}
+    </article>
+
+    <aside class="article-sidebar">
+      <div class="article-sidebar-card">
+        <h3>About Equality Times</h3>
+        <p>A public legal education platform focused on law, equality, society, human rights and legal awareness.</p>
+        <a class="btn btn-primary" href="{{ '/about.html' | relative_url }}">About the Platform →</a>
+      </div>
+
+      <div class="article-sidebar-card">
+        <h3>Explore</h3>
+        <a class="article-sidebar-link" href="{{ '/articles/' | relative_url }}">All Articles →</a>
+        <a class="article-sidebar-link" href="{{ '/research.html' | relative_url }}">Research →</a>
+        <a class="article-sidebar-link" href="{{ '/videos.html' | relative_url }}">Videos →</a>
+      </div>
+
+      <div class="article-sidebar-card article-submit-card">
+        <h3>Write for Equality Times</h3>
+        <p>Have original legal writing or research to share?</p>
+        <a class="btn btn-secondary" href="{{ '/write.html' | relative_url }}">Submission Guidelines →</a>
+      </div>
+    </aside>
+  </div>
 </main>
 
-<footer class="footer">
-  <div class="container footer-inner">
-    <div class="footer-text">© <span id="yr"></span> Equality Times</div>
-    <div class="footer-text">Public Legal Education Platform • equalitytimesindia@gmail.com</div>
+<footer class="et-footer">
+  <div class="et-footer-grid">
+    <div>
+      <div class="et-footer-brand"><img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times"></div>
+      <small>Public Legal Education Platform<br>Legal Education · Research · Public Awareness</small>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about.html' | relative_url }}">About</a>
+      <a href="{{ '/articles/' | relative_url }}">Articles</a>
+      <a href="{{ '/videos.html' | relative_url }}">Videos</a>
+    </div>
+    <div>
+      <h4>Knowledge &amp; Contact</h4>
+      <a href="{{ '/research.html' | relative_url }}">Research</a>
+      <a href="{{ '/team.html' | relative_url }}">Our Team</a>
+      <a href="{{ '/write.html' | relative_url }}">Write for Equality Times</a>
+      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+    </div>
+  </div>
+  <div class="et-copyright">
+    <span>© {{ "now" | date: "%Y" }} Equality Times. All rights reserved.</span>
+    <span>A more equal and informed society.</span>
   </div>
 </footer>
 
