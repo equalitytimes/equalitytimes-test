@@ -3,96 +3,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Articles | Equality Times</title>
-  <meta name="description" content="Articles and original writings published by Equality Times."/>
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"/>
+  <meta name="description" content="Original writings, legal explainers, research and analysis published by Equality Times.">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-<header class="topbar">
-  <div class="container topbar-inner">
-    <a class="brand" href="{{ '/' | relative_url }}">
-      <div class="brand-logo"><img src="{{ '/assets/logo.png' | relative_url }}" alt="Equality Times logo"></div>
+
+<header class="et-header">
+  <div class="et-header-inner">
+    <a class="et-brand" href="{{ '/' | relative_url }}" aria-label="Equality Times home">
       <div>
-        <div class="brand-title">Equality Times</div>
-        <div class="brand-sub">Constitution • Equality • Human Rights • Legal Awareness</div>
+        <img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times">
+        <span class="et-brand-tagline">Legal Education · Research · Public Awareness</span>
       </div>
     </a>
-    <nav class="nav">
+    <nav class="et-nav" aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/about.html' | relative_url }}">About</a>
-      <a class="active" href="{{ '/articles/' | relative_url }}">Articles</a>
+      <a href="{{ '/articles/' | relative_url }}" class="active">Articles</a>
       <a href="{{ '/videos.html' | relative_url }}">Videos</a>
       <a href="{{ '/research.html' | relative_url }}">Research</a>
+      <a href="{{ '/team.html' | relative_url }}">Our Team</a>
       <a href="{{ '/contact.html' | relative_url }}">Contact</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h1 class="section-title">Articles</h1>
-          <p class="section-note">Original writings, legal explainers, analysis, and perspectives.</p>
-        </div>
-      </div>
-
-      <div class="article-list">
-        {% if site.posts.size > 0 %}
-          {% for post in site.posts %}
-            <article class="article-list-card">
-              {% if post.cover_image %}
-                <a class="article-list-media" href="{{ post.url | relative_url }}"><img src="{{ post.cover_image | relative_url }}" alt="{{ post.title | escape }}"></a>
-              {% else %}
-                <a class="article-list-media article-list-fallback" href="{{ post.url | relative_url }}"><span>{{ post.category | default: "ARTICLE" }}</span></a>
-              {% endif %}
-              <div class="article-list-body">
-                <div class="article-category">{{ post.category | default: "Article" }}</div>
-                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                <div class="article-list-meta">{{ post.author | default: "Equality Times" }} • {{ post.date | date: "%d %B %Y" }}</div>
-                {% if post.excerpt %}<p>{{ post.excerpt }}</p>{% endif %}
-                <a class="btn btn-primary" href="{{ post.url | relative_url }}">Read Article →</a>
-              </div>
-            </article>
-          {% endfor %}
-        {% else %}
-          <div class="card">
-            <h3>No articles published yet.</h3>
-            <p>Your first approved article will appear here automatically.</p>
-          </div>
-        {% endif %}
-      </div>
+<main class="et-article-index">
+  <section class="et-page-hero">
+    <div class="et-container">
+      <div class="et-kicker">Articles</div>
+      <h1>Law, explained through writing.</h1>
+      <p>Original legal explainers, research, analysis and perspectives published by Equality Times.</p>
     </div>
   </section>
-      <section class="contribute-cta" aria-labelledby="contribute-title">
-        <div>
-          <div class="contribute-kicker">Contribute</div>
-          <h2 id="contribute-title">Write for Equality Times</h2>
-          <p>Have an original legal analysis, research piece, or public-education article to share? We welcome thoughtful writing that contributes to informed understanding of law and society.</p>
+
+  <section class="et-article-content">
+    <div class="et-article-intro">
+      <div class="et-section-label">Article Archive</div>
+      <h2>Ideas, law and public understanding.</h2>
+      <p>Each published piece is reviewed before appearing on Equality Times. Explore the latest writing below.</p>
+    </div>
+
+    <div class="et-article-list">
+      {% if site.posts.size > 0 %}
+        {% for post in site.posts %}
+          <article class="et-article-card">
+            <a class="et-article-card-media" href="{{ post.url | relative_url }}">
+              {% if post.cover_image %}
+                <img src="{{ post.cover_image | relative_url }}" alt="{{ post.title | escape }}">
+              {% else %}
+                <div style="height:100%;min-height:235px;display:flex;align-items:center;justify-content:center;color:#6b5b17;font-weight:800;letter-spacing:1px;">
+                  {{ post.category | default: "ARTICLE" }}
+                </div>
+              {% endif %}
+            </a>
+            <div class="et-article-card-body">
+              <div class="article-category">{{ post.category | default: "Article" }}</div>
+              <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+              <div class="et-article-meta">{{ post.author | default: "Equality Times" }} · {{ post.date | date: "%d %B %Y" }}</div>
+              {% if post.excerpt %}<p class="et-article-excerpt">{{ post.excerpt }}</p>{% endif %}
+              <a class="btn btn-primary" href="{{ post.url | relative_url }}">Read Article →</a>
+            </div>
+          </article>
+        {% endfor %}
+      {% else %}
+        <div class="card">
+          <h3>No articles published yet.</h3>
+          <p>Your first approved article will appear here automatically.</p>
         </div>
-        <a class="btn btn-primary" href="{{ '/write.html' | relative_url }}">Submit Your Writing →</a>
-      </section>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="et-contribute">
+    <div class="et-contribute-inner">
+      <div>
+        <div class="et-section-label">Contribute</div>
+        <h2>Write for Equality Times.</h2>
+        <p>Have an original legal analysis, research piece or public-education article to share? Submit it for editorial review.</p>
+      </div>
+      <a class="btn btn-primary" href="{{ '/write.html' | relative_url }}">Submit Your Writing →</a>
+    </div>
+  </section>
 </main>
 
-<footer class="footer">
-  <div class="container footer-inner footer-expanded">
+<footer class="et-footer">
+  <div class="et-footer-grid">
     <div>
-      <div class="footer-text">© <span id="yr"></span> Equality Times</div>
-      <div class="footer-text">Legal Education · Research · Public Awareness</div>
+      <div class="et-footer-brand"><img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times"></div>
+      <small>Public Legal Education Platform<br>Legal Education · Research · Public Awareness</small>
     </div>
-    <div class="footer-links-inline">
+    <div>
+      <h4>Explore</h4>
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/about.html' | relative_url }}">About</a>
       <a href="{{ '/articles/' | relative_url }}">Articles</a>
-      <a href="{{ '/research.html' | relative_url }}">Research</a>
       <a href="{{ '/videos.html' | relative_url }}">Videos</a>
+    </div>
+    <div>
+      <h4>Knowledge &amp; Contact</h4>
+      <a href="{{ '/research.html' | relative_url }}">Research</a>
       <a href="{{ '/team.html' | relative_url }}">Our Team</a>
       <a href="{{ '/write.html' | relative_url }}">Write for Equality Times</a>
       <a href="{{ '/contact.html' | relative_url }}">Contact</a>
     </div>
+  </div>
+  <div class="et-copyright">
+    <span>© {{ "now" | date: "%Y" }} Equality Times. All rights reserved.</span>
+    <span>A more equal and informed society.</span>
   </div>
 </footer>
 
