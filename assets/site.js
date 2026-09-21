@@ -274,46 +274,21 @@ function addThemeToggle(){
 }
 
 /* ===== EQUALITY TIMES LANGUAGE SELECTOR ===== */
-function addLanguageSelector(){
-  const headerInner = document.querySelector(".site-header-inner, .et-header-inner");
-  if(!headerInner || document.querySelector(".language-selector")) return;
+function initLanguageSelector(){
+  const selector = document.querySelector(".language-selector");
+  if(!selector || selector.dataset.ready === "true") return;
+  selector.dataset.ready = "true";
 
-  const wrap = document.createElement("div");
-  wrap.className = "language-selector";
-  wrap.innerHTML = `
-    <button type="button" class="language-toggle" aria-label="Choose language" title="Choose language">A</button>
-    <div class="language-menu" hidden>
-      <button type="button" data-lang="en">English</button>
-      <button type="button" data-lang="mr">मराठी</button>
-      <button type="button" data-lang="hi">हिंदी</button>
-    </div>
-  `;
-
-  const style = document.createElement("style");
-  style.textContent = `
-    .language-selector{position:absolute!important;right:50px;top:23px;display:inline-flex;align-items:center;margin:0;flex:0 0 auto;z-index:1001}
-    .language-toggle{width:34px;height:34px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:transparent;color:#fff;font:700 13px/1 Arial,sans-serif;cursor:pointer}
-    .language-toggle:hover{border-color:#f4c400;color:#f4c400}
-    .language-menu{position:absolute;right:0;top:42px;min-width:118px;background:#080d11;border:1px solid rgba(255,255,255,.16);box-shadow:0 8px 24px rgba(0,0,0,.22);padding:5px;z-index:1100}
-    .language-menu button{display:block;width:100%;border:0;background:transparent;color:#fff;text-align:left;padding:9px 10px;font:600 13px/1.2 Arial,sans-serif;cursor:pointer}
-    .language-menu button:hover{background:rgba(244,196,0,.12);color:#f4c400}
-    .goog-te-banner-frame.skiptranslate{display:none!important}
-    body{top:0!important}
-    .goog-tooltip,.goog-te-balloon-frame{display:none!important}
-    @media(max-width:900px){.language-selector{right:50px;top:19px}.language-menu{left:auto;right:0;top:42px}}
-  `;
-  document.head.appendChild(style);
-
-  headerInner.appendChild(wrap);
-  const toggle = wrap.querySelector(".language-toggle");
-  const menu = wrap.querySelector(".language-menu");
+  const toggle = selector.querySelector(".language-toggle");
+  const menu = selector.querySelector(".language-menu");
+  if(!toggle || !menu) return;
 
   toggle.addEventListener("click", (event) => {
     event.stopPropagation();
     menu.hidden = !menu.hidden;
   });
 
-  wrap.querySelectorAll("[data-lang]").forEach(button => {
+  selector.querySelectorAll("[data-lang]").forEach(button => {
     button.addEventListener("click", () => {
       const lang = button.getAttribute("data-lang");
       const select = document.querySelector(".goog-te-combo");
@@ -353,7 +328,7 @@ window.etGoogleTranslateInit = function(){
 initTheme();
 
 document.addEventListener("DOMContentLoaded", () => {
-  addLanguageSelector();
+  initLanguageSelector();
   addThemeToggle();
   yearFill();
   renderVideos("videosFeatured", 3);
