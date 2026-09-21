@@ -572,6 +572,11 @@ body.et-dark-mode .et-audience,
 body.et-dark-mode .et-approach,
 body.et-dark-mode .et-vision{border-color:#303944!important}
 body.et-dark-mode .et-footer{background:#080d11!important}
+
+/* Mobile header flow fix: keep the full header in document flow. */
+@media (max-width: 900px){
+  .site-header{position:sticky!important;top:0!important;left:auto!important;right:auto!important}
+}
 </style>
 </head>
 
