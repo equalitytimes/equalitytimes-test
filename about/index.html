@@ -551,6 +551,27 @@ permalink: /about/
 body{padding-top:88px!important}
 @media(max-width:900px){body{padding-top:118px!important}}
 @media(max-width:600px){body{padding-top:118px!important}}
+/* About page dark-mode content */
+body.et-dark-mode{background:#0d1117!important;color:#eef2f6!important}
+body.et-dark-mode .et-content{background:#0d1117!important}
+body.et-dark-mode .et-section-label{color:#aab4c0!important}
+body.et-dark-mode .et-intro p,
+body.et-dark-mode .et-audience p,
+body.et-dark-mode .et-approach p,
+body.et-dark-mode .et-vision p,
+body.et-dark-mode .et-work-item p{color:#aab4c0!important}
+body.et-dark-mode .et-intro h2,
+body.et-dark-mode .et-work h2,
+body.et-dark-mode .et-audience h2,
+body.et-dark-mode .et-approach h2,
+body.et-dark-mode .et-vision h2,
+body.et-dark-mode .et-work-item h3{color:#eef2f6!important}
+body.et-dark-mode .et-work-grid{background:#303944!important;border-color:#303944!important}
+body.et-dark-mode .et-work-item{background:#151a21!important}
+body.et-dark-mode .et-audience,
+body.et-dark-mode .et-approach,
+body.et-dark-mode .et-vision{border-color:#303944!important}
+body.et-dark-mode .et-footer{background:#080d11!important}
 </style>
 </head>
 
@@ -759,5 +780,6 @@ body{padding-top:88px!important}
   </div>
 </footer>
 
+<script src="{{ '/assets/site.js' | relative_url }}"></script>
 </body>
 </html>
