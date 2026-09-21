@@ -302,17 +302,21 @@ function initLanguageSelector(){
   }
 }
 function hideGoogleTranslateBar(){
-  const clean=()=>{
-    document.querySelectorAll(".goog-te-banner-frame,iframe.goog-te-banner-frame,iframe[src*='translate.google.com']").forEach(el=>el.remove());
+  const clean = () => {
+    document.querySelectorAll(".goog-te-banner-frame, iframe.goog-te-banner-frame, iframe[src*='translate.google.com']").forEach(el => {
+      el.style.setProperty("display","none","important");
+      el.style.setProperty("visibility","hidden","important");
+      el.style.setProperty("height","0","important");
+    });
     document.body.style.setProperty("top","0","important");
     document.documentElement.style.setProperty("margin-top","0","important");
   };
   clean();
-  const observer=new MutationObserver(clean);
-  observer.observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:["style","class"]});
-  const timer=setInterval(clean,300);
-  setTimeout(()=>{clearInterval(timer);observer.disconnect();clean();},30000);
+  const observer = new MutationObserver(() => clean());
+  observer.observe(document.documentElement,{childList:true,subtree:true});
+  setTimeout(()=>observer.disconnect(),10000);
 }
+
 window.etGoogleTranslateInit=function(){
   if(window.google && google.translate && google.translate.TranslateElement){
     new google.translate.TranslateElement({pageLanguage:"en",includedLanguages:"en,mr,hi",autoDisplay:false},"google_translate_element");
