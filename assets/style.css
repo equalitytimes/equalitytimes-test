@@ -2006,3 +2006,18 @@ body.et-dark-mode .et-article-card-body h2 a{
 body.et-dark-mode .et-article-card-body h2 a:hover{
   color:#f4c400!important;
 }
+
+
+/* ===== HOMEPAGE DARK MODE — CARD & SECTION FIXES ===== */
+body.et-dark-mode .et-section{background:#0d1117!important;color:#eef2f6!important}
+body.et-dark-mode .et-focus-grid{border-top-color:#303944!important;border-bottom-color:#303944!important}
+body.et-dark-mode .et-focus-card{background:#0d1117!important;color:#eef2f6!important;border-right-color:#303944!important;border-top-color:#303944!important}
+body.et-dark-mode .et-focus-card h3,body.et-dark-mode .et-feature-content h3,body.et-dark-mode .et-latest-item h3,body.et-dark-mode .et-research-content h3,body.et-dark-mode .et-section h2{color:#eef2f6!important}
+body.et-dark-mode .et-focus-card p,body.et-dark-mode .et-feature-content p,body.et-dark-mode .et-research-content p,body.et-dark-mode .et-section-sub{color:#aab4c0!important}
+body.et-dark-mode .et-feature-card,body.et-dark-mode .et-research-card,body.et-dark-mode .et-video-card{background:#151a21!important;border-color:#303944!important}
+body.et-dark-mode .et-feature-content,body.et-dark-mode .et-research-content,body.et-dark-mode .et-video-title{background:#151a21!important;color:#eef2f6!important}
+body.et-dark-mode .et-category,body.et-dark-mode .et-meta,body.et-dark-mode .et-latest-meta{color:#aab4c0!important}
+body.et-dark-mode .et-read,body.et-dark-mode .et-view-all{color:#f4c400!important}
+body.et-dark-mode .et-latest-item{border-bottom-color:#303944!important}
+body.et-dark-mode .et-heading-line{background:#f4c400!important}
+@media(max-width:900px){body.et-dark-mode .et-focus-card:nth-child(2){border-right-color:transparent!important}}
