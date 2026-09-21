@@ -11,677 +11,157 @@ cover_image: /media/article-images/poor-25440611280-1.jpg
 tags:
   - constitution
 ---
-# UNTOUCHABILITY IN INDIA
+# Untouchability in India: The Constitution’s Promise and the Reality That Remains
 
-## From Social Exclusion to a Constitutional Crime
+**By Harshal Gawande | Equality Times**
 
-**By Equality Times Research Desk**
+*Article 17 abolished untouchability more than seven decades ago. Yet the history of caste exclusion—from Mahad and Vaikom to contemporary discrimination—shows the distance that can exist between constitutional rights and social reality.*
 
-### *How India transformed the abolition of untouchability from a social-reform demand into an enforceable constitutional right—and why the struggle is not yet over.*
+Untouchability is one of the most powerful examples of the Indian Constitution's attempt to transform society through law. For generations, people placed at the bottom of the caste hierarchy were subjected to restrictions because of their birth. Access to water, roads, temples, schools and other public spaces could depend on caste. In some places, social exclusion extended to occupations, residence, clothing and ordinary interaction with other members of society.
 
----
+The Constitution sought to end this system decisively. Article 17 declares that “Untouchability” is abolished and that its practice in any form is forbidden. It goes further by making the enforcement of any disability arising from untouchability an offence punishable according to law.[1]
 
-## Abstract
+But the constitutional abolition of untouchability did not mean that caste-based exclusion disappeared from Indian society on 26 January 1950. The history since independence shows both the strength of the constitutional response and the difficulty of changing deeply rooted social structures.
 
-Untouchability was one of the most deeply entrenched forms of caste-based social exclusion in the Indian subcontinent. Its manifestations historically included restrictions on access to water, roads, temples, education, public facilities and occupations. Social reform movements, including the Vaikom Satyagraha and Dr. B.R. Ambedkar's Mahad Satyagraha, challenged these practices before independence.
+## A history of exclusion
 
-The Constitution of India subsequently made the abolition of untouchability a fundamental constitutional command through **Article 17**. Parliament followed this mandate with the **Protection of Civil Rights Act, 1955**, and later enacted the **Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act, 1989** to address a broader range of caste-based atrocities.
+The practice of untouchability was not identical across India. Its forms differed between regions and communities, and historians caution against treating the experience as a single uniform system. Yet the underlying principle was common: certain communities were treated as socially inferior because of their birth and were subjected to disabilities that others did not face.
 
-Yet constitutional abolition did not automatically eliminate social discrimination. Contemporary official data, judicial proceedings and human-rights interventions continue to document caste-based exclusion, violence and degrading practices. This article examines the historical development of untouchability, its constitutional and statutory framework, important judicial decisions, contemporary manifestations and the legal remedies available to victims.
+Access to water became one of the most important sites of resistance.
 
-**Keywords:** Untouchability, Article 17, Constitution of India, Caste Discrimination, Protection of Civil Rights Act, SC/ST Prevention of Atrocities Act, Manual Scavenging, Equality, Human Rights.
+In 1927, Dr. B.R. Ambedkar led the Mahad Satyagraha in Maharashtra. The Mahad Municipality had earlier resolved that the Chavdar Tank, a public water source, should be available to the Depressed Classes. On 20 March 1927, Ambedkar and thousands of his followers asserted their right to use the tank. The episode became a landmark in the struggle against caste-based exclusion.[2]
 
----
+The importance of Mahad went beyond the question of water. It challenged the idea that a public resource could be treated as the preserve of one caste while another community was prevented from using it.
 
-# 1. Introduction
+A similar struggle had already emerged in Travancore. The Vaikom Satyagraha, which began in 1924, challenged restrictions preventing members of oppressed communities from using public roads around the Vaikom temple. The movement continued for more than a year and became an important episode in the wider struggle against untouchability and caste exclusion.[3]
 
-The Constitution of India was adopted against the background of a society marked by profound social inequalities.
+Temple entry became another major field of resistance. Ambedkar's Kalaram Temple Satyagraha at Nashik in 1930 challenged the exclusion of Dalits from a prominent Hindu temple. These movements were not simply disputes about access to religious institutions. They questioned a much larger social order in which caste could determine who was entitled to participate in public and community life.
 
-Among the most serious was the practice historically described as **untouchability**—a system under which sections of society were treated as socially inferior and subjected to disabilities because of caste and birth.
+These struggles helped establish a principle that would later find its clearest legal expression in the Constitution: **citizenship cannot be graded according to caste.**
 
-The Constitution responded with unusually strong language.
+## Article 17 and the constitutional break
 
-**Article 17 provides:**
+When the Constitution came into force, the abolition of untouchability was placed among the Fundamental Rights.
 
-> “Untouchability” is abolished and its practice in any form is forbidden.¹
+Article 17 is brief, but its constitutional significance is considerable. It does not merely ask the State to discourage untouchability. It abolishes the practice and prohibits it in any form.[1]
 
-It further provides that enforcing any disability arising from untouchability shall constitute an offence punishable according to law.¹
+The provision is also unusual because its concern is not limited to traditional State action. In *State of Karnataka v. Appa Balu Ingale*, the Supreme Court dealt with the denial of access to a public water source to members of a Scheduled Caste and emphasised the constitutional objective of eliminating caste-based disabilities.[4]
 
-This was not merely a declaration of social morality. It was a constitutional prohibition backed by legislation and criminal sanctions.
+The Court has subsequently treated Article 17 as part of the Constitution's transformative project: the Constitution was not merely establishing institutions of government; it was also seeking to dismantle social practices inconsistent with equality and dignity.[5]
 
-The Supreme Court has subsequently explained that the expression "untouchability" in Article 17 does not refer simply to literal physical avoidance of another person. Rather, it concerns the historically evolved practice of caste-based social exclusion and disabilities.²
+The meaning of “untouchability” under Article 17 should therefore not be reduced to its literal meaning of refusing physical contact with another person. The constitutional concept concerns the caste-based system of social disabilities historically associated with untouchability.[4]
 
-Understanding Article 17 therefore requires understanding both **India's history of caste exclusion and the constitutional transformation that followed independence.**
+That distinction matters. Not every act of caste discrimination is necessarily an offence under Article 17 or the Protection of Civil Rights Act. At the same time, caste-based conduct that falls outside the narrow statutory concept of untouchability may still violate other constitutional rights or constitute an offence under other legislation.
 
----
+## From constitutional prohibition to criminal law
 
-# 2. What Is Untouchability?
+Article 17 itself contemplated legislation to punish the enforcement of disabilities arising from untouchability. Parliament responded with the Untouchability (Offences) Act, 1955. The legislation was substantially amended in 1976 and renamed the **Protection of Civil Rights Act, 1955**.[6]
 
-Untouchability is a historically evolved system of caste-based exclusion in which people regarded as belonging to "untouchable" communities were subjected to disabilities, restrictions and humiliation because of their birth.
+The Act criminalises a range of disabilities arising from the practice of untouchability. Its provisions cover, among other matters, religious disabilities, access to public places and services, and certain forms of social exclusion and compulsory labour.[6]
 
-It could affect fundamental aspects of everyday life.
+The law therefore converted a constitutional principle into an enforceable criminal framework.
 
-Historically, such restrictions could include exclusion from:
+But caste-based oppression cannot always be described as untouchability in the technical sense. Violence, sexual assault, intimidation, dispossession and deliberate humiliation may involve caste but fall within a broader category of atrocities. This was one reason Parliament enacted the **Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act, 1989**.[7]
 
-- public wells and tanks;
-- roads and other public spaces;
-- temples and places of worship;
-- schools;
-- restaurants and shops;
-- public facilities;
-- social and religious gatherings;
-- particular occupations;
-- residential areas.
+The SC/ST (Prevention of Atrocities) Act creates specific offences, provides for Special Courts and Exclusive Special Courts, and contains provisions relating to victims, witnesses, relief and rehabilitation.[7] It has also been amended over time to strengthen protections and expand the statutory framework.
 
-The Supreme Court has recognised that the practice historically imposed restrictions concerning public roads, temples, water sources, educational institutions, occupations and other public spaces.²
+The distinction between the two laws is important. The Protection of Civil Rights Act is principally concerned with disabilities arising from untouchability. The SC/ST (Prevention of Atrocities) Act addresses a wider range of specified atrocities against members of Scheduled Castes and Scheduled Tribes.
 
-### Untouchability is therefore not simply a question of physical contact.
+## When abolition did not mean disappearance
 
-A person refusing to shake hands with another person, without more, does not automatically constitute the constitutional offence of untouchability.
+The Constitution changed the law, but it could not immediately change every social relationship.
 
-The constitutional concern is much deeper: **the imposition of disabilities or social exclusion on the basis of the caste-based system historically associated with untouchability.**
+Post-independence India has witnessed several serious episodes of caste-based violence. The Kilvenmani killings in Tamil Nadu in 1968, Belchi in Bihar in 1977, Karamchedu in Andhra Pradesh in 1985, Tsundur in Andhra Pradesh in 1991 and Khairlanji in Maharashtra in 2006 are among the incidents that have become significant in the history of caste violence in independent India.
 
-This distinction is important for accurate legal reporting.
+These events should not all be categorised legally as “untouchability” cases. Some involved land, labour, political and social conflicts in which caste was a major factor. Others involved conduct that could attract provisions of the SC/ST (Prevention of Atrocities) Act or general criminal law. Their significance lies in demonstrating that the abolition of untouchability did not by itself eliminate caste-based domination or violence.
 
----
+The distinction is important because legal writing should not turn every form of caste violence into an Article 17 offence. Article 17 has a specific constitutional meaning, while caste discrimination and atrocities cover a considerably wider field.
 
-# 3. Untouchability Before Independence
+## The problem did not end with the twentieth century
 
-Caste-based exclusion existed in different forms across different regions of India. It would therefore be historically inaccurate to suggest that every community or every region followed an identical system.
+Contemporary India has seen a different vocabulary of caste exclusion, but the underlying issue remains relevant.
 
-Nevertheless, historical evidence demonstrates widespread practices of exclusion from public resources and institutions.
+Discrimination may appear through exclusion from common resources, social boycotts, caste-based humiliation, residential segregation, unequal treatment, violence or occupational discrimination. It can also appear in digital spaces, where caste-based abuse and threats can take new forms.
 
-Two movements are particularly important in understanding the struggle that preceded Article 17.
+One particularly serious example is manual scavenging and hazardous sewer cleaning.
 
----
+Parliament enacted the **Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013**, prohibiting manual scavenging and providing a framework for rehabilitation.[8] The Supreme Court has subsequently dealt extensively with the issue, including in *Dr. Balram Singh v. Union of India*, where it addressed the constitutional implications of sewer and septic-tank deaths and directions concerning compensation and rehabilitation.[9]
 
-# 4. Vaikom Satyagraha: The Right to Use Public Roads
+The connection between caste, occupation and dignity is significant here. Historically, sanitation work was imposed disproportionately upon communities subjected to untouchability. The continuation of degrading and hazardous work therefore raises questions extending beyond labour regulation to equality, dignity and social justice.
 
-The **Vaikom Satyagraha**, which began in Travancore in 1924, challenged restrictions that prevented members of oppressed communities from using public roads surrounding the Vaikom temple.
+Official data also demonstrates that caste-based crime remains a contemporary concern. NCRB's *Crime in India* statistics record thousands of cases of crime against Scheduled Castes each year. These figures, however, should not be presented as a direct measure of “untouchability.” They concern the broader category of crimes and atrocities against Scheduled Castes and must be interpreted with care, including differences in reporting and registration between States and Union Territories.[10]
 
-The movement continued for more than a year and became one of the important anti-untouchability struggles of the pre-independence period.
+## What does the law provide to a victim?
 
-The issue was fundamental:
+The legal response depends on what has actually occurred.
 
-**Could a public road be effectively restricted because of caste?**
+Where conduct amounts to an offence, a victim may approach the police and seek registration of the appropriate criminal case. Depending on the facts, the Protection of Civil Rights Act, the SC/ST (Prevention of Atrocities) Act, the Bharatiya Nyaya Sanhita, the law concerning manual scavenging or other legislation may apply.
 
-The movement eventually contributed to the opening of roads around the temple to communities previously excluded, while wider temple-entry reform followed through the **Travancore Temple Entry Proclamation of 1936**.
+The SC/ST (Prevention of Atrocities) Act provides a specialised framework that includes Special Courts and Exclusive Special Courts, victim and witness rights, and provisions concerning relief and rehabilitation.[7]
 
-The episode demonstrates that caste exclusion extended beyond religious entry itself. Ordinary public infrastructure could become a mechanism of social segregation.
+Constitutional remedies may also be relevant. In appropriate cases, a person whose fundamental rights have been violated may approach a High Court under Article 226 or the Supreme Court under Article 32.
 
----
+Complaints may additionally be brought before institutions such as the National Commission for Scheduled Castes, the National Human Rights Commission or the relevant State authorities, depending on the nature of the grievance.
 
-# 5. Mahad Satyagraha: The Right to Water
+For a victim, preserving evidence can also be crucial. Photographs, videos, messages, medical records, documents, witness details and evidence of threats or social boycott may become relevant to an investigation or proceeding. A person unable to afford legal representation can approach the appropriate Legal Services Authority for assistance.
 
-One of the most significant anti-untouchability movements in modern Indian history occurred at **Mahad, Maharashtra, in 1927**.
+The law therefore provides more than a single remedy. Criminal prosecution, constitutional remedies, statutory compensation, rehabilitation and institutional complaints can operate within the appropriate legal framework.
 
-The Mahad Municipality had resolved that the Chavdar Tank, a public water source, should be accessible to the Depressed Classes.
+## The continuing constitutional question
 
-On 20 March 1927, Dr. B.R. Ambedkar and thousands of supporters asserted their right to use the tank.
+More than seven decades after Article 17 came into force, the central question is no longer whether untouchability is legally permissible. The Constitution answered that question in 1950.
 
-The Supreme Court's historical materials recognise Mahad as a significant episode in the struggle against caste-based exclusion.³
+The more difficult question is whether the constitutional prohibition has been fully realised in everyday life.
 
-The confrontation that followed demonstrated the depth of the social belief that members of oppressed castes could "pollute" public resources through their presence.
+The history of Mahad demonstrates why access to a public water source mattered. Vaikom demonstrates how caste could determine the use of a public road. The temple-entry movements demonstrated that exclusion could extend to religious and social participation. Contemporary cases demonstrate that caste-based humiliation and violence have not entirely disappeared.
 
-Mahad therefore represented much more than access to water.
+The Constitution attempted to change this relationship between citizens.
 
-It represented a challenge to the proposition that **birth could determine access to a public resource.**
+Article 14 established equality before the law. Article 15 prohibited specified forms of discrimination. Article 17 abolished untouchability. Article 21 has been interpreted by the Supreme Court to protect human dignity. Article 46 directs the State to promote the educational and economic interests of weaker sections and protect them from social injustice and exploitation.
 
----
+Taken together, these provisions reflect a constitutional rejection of inherited social hierarchy.
 
-# 6. Kalaram Temple Satyagraha
+The significance of Article 17 therefore extends beyond the question of physical contact. It asks whether a person's birth can determine their access to public life, dignity and equal citizenship.
 
-In 1930, Dr. B.R. Ambedkar led the movement for entry into the **Kalaram Temple at Nashik**.
+The answer written into the Constitution is clear: it cannot.
 
-Temple entry was one of the most visible manifestations of caste exclusion.
-
-The movement demonstrated that the struggle against untouchability was not limited to access to physical resources. It also concerned social recognition, religious participation and equal civic status.
-
-The broader anti-untouchability movement helped create the intellectual and political environment in which equality became a central constitutional principle.
+The challenge is ensuring that this constitutional principle is not confined to the text of the Constitution, statutes and judgments, but becomes a reality in the ordinary lives of the people for whom Article 17 was written.
 
 ---
 
-# 7. Article 17: The Constitutional Revolution
+### Notes
 
-When the Constitution came into force on **26 January 1950**, India adopted a fundamentally different legal position.
+**[1]** Constitution of India, art. 17.
 
-Article 17 states:
+**[2]** Supreme Court of India, *Mahad Satyagraha*, historical materials concerning Dr. B.R. Ambedkar and the Chavdar Tank movement.
 
-> “Untouchability” is abolished and its practice in any form is forbidden.¹
+**[3]** Government of Kerala, Kottayam District Administration, historical account of the Vaikom Satyagraha; see also Government of India historical material concerning the Temple Entry Proclamation.
 
-The second part of Article 17 is equally significant:
+**[4]** *State of Karnataka v. Appa Balu Ingale*, 1995 Supp (4) SCC 469.
 
-> The enforcement of any disability arising out of “Untouchability” shall be an offence punishable in accordance with law.¹
+**[5]** See Supreme Court of India jurisprudence concerning Article 17 and the transformative constitutional approach to caste-based exclusion.
 
-Article 17 therefore performs two functions:
+**[6]** Protection of Civil Rights Act, 1955, India Code, particularly sections 3–7A.
 
-### First — abolition
+**[7]** Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act, 1989, India Code.
 
-The Constitution rejects untouchability as a legitimate social practice.
+**[8]** Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013.
 
-### Second — criminalisation
+**[9]** *Dr. Balram Singh v. Union of India*, 2023 INSC 950, Supreme Court of India, judgment dated 20 October 2023.
 
-The enforcement of disabilities arising from untouchability must be punishable through law.
+**[10]** National Crime Records Bureau, *Crime in India*; Government of India, Open Government Data Platform, data concerning crimes/atrocities against Scheduled Castes.
 
-The Government of India itself describes Article 17 as abolishing untouchability and identifies the Protection of Civil Rights Act, 1955 as the principal legislation giving effect to the prohibition.⁴
+### Selected Sources
 
----
+Constitution of India.  
+Protection of Civil Rights Act, 1955.  
+Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act, 1989.  
+Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013.  
+*State of Karnataka v. Appa Balu Ingale*, 1995 Supp (4) SCC 469.  
+*Dr. Balram Singh v. Union of India*, 2023 INSC 950.  
+Supreme Court of India — historical and constitutional materials.  
+Ministry of Social Justice & Empowerment, Government of India.  
+National Crime Records Bureau, *Crime in India*.  
+National Human Rights Commission of India.
 
-# 8. Why Article 17 Is Constitutionally Unique
-
-Article 17 is particularly significant because its operation is not confined to traditional State action.
-
-In **State of Karnataka v. Appa Balu Ingale**, the Supreme Court recognised that the constitutional prohibition of untouchability extends to conduct by individuals and institutions as well as State action.⁵
-
-The Court described untouchability as deeply connected with the caste system and emphasised that Article 17 seeks to establish equality and eliminate disabilities imposed upon Dalits.² ⁵
-
-Later Supreme Court jurisprudence has continued to treat Article 17 as part of the Constitution's transformative project of dismantling caste-based exclusion.²
-
-This makes Article 17 fundamentally different from a merely symbolic constitutional statement.
-
----
-
-# 9. Article 17 and the Wider Equality Code
-
-Article 17 must be read together with other constitutional provisions.
-
-
-| Constitutional provision | Relevance |
-| ------------------------ | --------------------------------------------------------------------------------------------- |
-| **Article 14** | Equality before law and equal protection of laws |
-| **Article 15** | Prohibition of specified forms of discrimination, including caste discrimination by the State |
-| **Article 17** | Abolition of untouchability |
-| **Article 21** | Protection of life and personal liberty, including constitutional dignity |
-| **Article 23** | Prohibition of trafficking and forced labour |
-| **Article 46** | Promotion of educational and economic interests of weaker sections, particularly SCs and STs |
-| **Article 338** | Constitutional Commission for Scheduled Castes |
-
-
-The constitutional framework therefore addresses caste exclusion through several connected principles:
-
-**equality + dignity + protection + social justice + representation.**
-
----
-
-# 10. Protection of Civil Rights Act, 1955
-
-Article 17 required legislation capable of enforcing its prohibition.
-
-Parliament enacted the **Untouchability (Offences) Act, 1955**.
-
-The legislation was substantially amended in 1976 and renamed the **Protection of Civil Rights Act, 1955 (PCR Act)**.⁶
-
-Its long title describes its purpose as providing punishment for the preaching and practice of untouchability and for enforcing disabilities arising from it.⁶
-
-The Act covers several forms of disability, including:
-
-### Religious disabilities
-
-Preventing a person from entering or using a place of public worship in circumstances covered by the Act.
-
-### Social disabilities
-
-Imposing caste-based restrictions on access to public places and facilities.
-
-### Denial of services
-
-Refusing goods or services to a person on prohibited grounds.
-
-### Compulsory labour
-
-Section 7A addresses certain forms of unlawful compulsory labour deemed to constitute a practice of untouchability.⁶
-
-### Abetment
-
-The Act also provides for punishment of persons who abet relevant offences.
-
-The Act further provides that offences are cognizable and triable summarily in accordance with its provisions.⁶
-
----
-
-# 11. The SC/ST (Prevention of Atrocities) Act, 1989
-
-Untouchability is not synonymous with every form of caste violence.
-
-Caste-based oppression may also involve:
-
-- physical violence;
-- sexual violence;
-- intimidation;
-- dispossession;
-- destruction of property;
-- public humiliation;
-- forced or exploitative practices;
-- social and economic retaliation.
-
-To address specified atrocities against members of Scheduled Castes and Scheduled Tribes, Parliament enacted the **Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act, 1989**.⁷
-
-The legislation provides, among other things, for:
-
-- specified offences;
-- Special Courts;
-- Exclusive Special Courts;
-- Special Public Prosecutors;
-- victim and witness protections;
-- relief and rehabilitation;
-- duties of public servants;
-- appeals and procedural safeguards.⁷
-
-The Ministry of Social Justice and Empowerment describes the Act as part of the Government's legal framework for preventing atrocities and providing Special Courts, relief and rehabilitation.⁴
-
----
-
-# 12. Untouchability and Manual Scavenging
-
-One of the most serious manifestations of caste-linked occupational exclusion is **manual scavenging**.
-
-Parliament enacted the **Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013** to prohibit manual scavenging and provide rehabilitation.
-
-The Supreme Court's decision in **Dr. Balram Singh v. Union of India** examined the continuing problem of manual scavenging and hazardous sewer/septic-tank cleaning.⁸
-
-The Court issued directions concerning, among other matters:
-
-- implementation of the statutory framework;
-- identification and rehabilitation;
-- compensation for sewer deaths;
-- institutional mechanisms for preventing hazardous cleaning.
-
-The case demonstrates the relationship between occupational dignity, caste structures and constitutional rights.
-
-The Union Government has subsequently continued to report on implementation of the Supreme Court's directions and rehabilitation measures.⁹
-
----
-
-# 13. Post-Independence: Did Article 17 End Untouchability?
-
-**Legally, untouchability was abolished in 1950.**
-
-Socially, however, caste-based exclusion did not disappear overnight.
-
-Post-independence India has witnessed serious incidents of caste-based violence and discrimination.
-
-Examples frequently discussed in legal and historical literature include:
-
-- **Kilvenmani, Tamil Nadu (1968)**;
-- **Belchi, Bihar (1977)**;
-- **Karamchedu, Andhra Pradesh (1985)**;
-- **Tsundur, Andhra Pradesh (1991)**;
-- **Khairlanji, Maharashtra (2006)**.
-
-These incidents should not automatically be described as "untouchability" offences.
-
-They belong to the broader history of **caste-based violence and discrimination**, while particular conduct may additionally attract the Protection of Civil Rights Act, the SC/ST (Prevention of Atrocities) Act or general criminal law depending upon the facts.
-
-That legal distinction is essential.
-
----
-
-# 14. The Supreme Court's Interpretation: Appa Balu Ingale
-
-In **State of Karnataka v. Appa Balu Ingale**, the Supreme Court dealt with a case involving denial of access to a public water source to members of a Scheduled Caste.
-
-The Court emphasised the transformative purpose of Article 17 and connected untouchability with caste-based social disabilities.⁵
-
-The judgment remains important because it demonstrates that Article 17 concerns actual access to civic life—not merely abstract equality.
-
-The constitutional promise is meaningless if a person formally possesses equal citizenship but cannot use public resources because of caste.
-
----
-
-# 15. What Does Untouchability Look Like Today?
-
-Contemporary caste exclusion may not resemble the practices documented a century ago.
-
-It can take different forms.
-
-### Public exclusion
-
-Preventing access to common resources, temples or public facilities.
-
-### Social boycott
-
-Cutting individuals or families off from ordinary community participation.
-
-### Caste-based humiliation
-
-Publicly degrading a person because of caste.
-
-### Occupational discrimination
-
-Assigning or forcing degrading work because of caste.
-
-### Violence
-
-Assault, sexual violence, threats or destruction of property.
-
-### Institutional discrimination
-
-Unequal treatment in educational, employment or public institutions.
-
-### Digital caste abuse
-
-Caste-based harassment and threats through social-media platforms.
-
-Not every such act is legally classified as "untouchability" under Article 17.
-
-However, depending upon the circumstances, such conduct may violate constitutional protections or constitute offences under specific statutes.
-
----
-
-# 16. What Does Current Official Data Show?
-
-The most recent NCRB statistics currently available are published in the **Crime in India** series.
-
-Government data for 2023 recorded **53,372 cases registered under the SC/ST (Prevention of Atrocities) Act against Scheduled Castes**, according to data presented by the Ministry of Social Justice and Empowerment in 2026.¹⁰
-
-This figure should be understood correctly.
-
-It is **not a count of "untouchability cases."**
-
-It represents cases registered under the SC/ST (Prevention of Atrocities) Act.
-
-NCRB data separately records broader crimes/atrocities against Scheduled Castes, and the Government's data portal cautions that State and Union Territory figures should not be compared mechanically because reporting and other factors differ.¹¹
-
-Therefore, statistics must be used carefully rather than presented as a direct measurement of the prevalence of untouchability.
-
----
-
-# 17. A Recent Example of Caste-Based Social Exclusion
-
-The continuing relevance of the issue can also be seen in contemporary human-rights proceedings.
-
-The National Human Rights Commission has taken cognisance of allegations involving caste-based humiliation, violence and social ostracisation.
-
-Such proceedings are important evidence that caste exclusion remains a contemporary human-rights concern.
-
-However, allegations recorded by a human-rights institution should be described as **allegations** unless and until a competent authority or court establishes the relevant facts.
-
-This distinction is particularly important for responsible legal journalism.
-
----
-
-# 18. What Legal Remedies Are Available?
-
-A person facing caste-based discrimination, untouchability or an atrocity may have several possible legal avenues.
-
-The appropriate remedy depends on the facts.
-
-## 18.1 Police complaint and FIR
-
-Where the conduct constitutes a criminal offence, the victim can approach the police.
-
-Depending on the circumstances, applicable legislation may include:
-
-- Protection of Civil Rights Act, 1955;
-- SC/ST (Prevention of Atrocities) Act, 1989;
-- Bharatiya Nyaya Sanhita, 2023;
-- Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013;
-- other applicable laws.
-
-The exact sections should be determined from the facts.
-
----
-
-## 18.2 Special Courts
-
-The SC/ST (Prevention of Atrocities) Act provides for Special Courts and Exclusive Special Courts for specified offences.⁷
-
-These mechanisms are intended to facilitate specialised adjudication of atrocity cases.
-
----
-
-## 18.3 Victim and Witness Protection
-
-Section 15A of the SC/ST Act provides statutory rights to victims and witnesses, including safeguards concerning participation and protection.⁷
-
----
-
-## 18.4 Relief and Rehabilitation
-
-The statutory framework provides for relief and rehabilitation for eligible victims.
-
-Government schemes provide financial and institutional support to States and Union Territories for implementation of the PCR Act and SC/ST Act.⁴
-
----
-
-## 18.5 Constitutional Remedies
-
-Fundamental-rights violations may, where appropriate, be brought before constitutional courts.
-
-### Article 226
-
-A person may approach the High Court through a writ petition in appropriate circumstances.
-
-### Article 32
-
-The Supreme Court may be approached for enforcement of fundamental rights in appropriate cases.
-
-The availability and suitability of these remedies depends on the facts and procedural circumstances.
-
----
-
-## 18.6 Human Rights and Constitutional Commissions
-
-Depending on the circumstances, complaints may also be made to:
-
-- National Human Rights Commission;
-- State Human Rights Commission;
-- National Commission for Scheduled Castes;
-- relevant State Commission;
-- District Legal Services Authority;
-- other competent authorities.
-
----
-
-# 19. What Should a Victim Do Immediately?
-
-Where a person experiences caste-based violence or exclusion, practical steps can be important.
-
-### Preserve evidence
-
-Keep:
-
-- photographs;
-- videos;
-- messages;
-- social-media posts;
-- medical records;
-- names of witnesses;
-- CCTV information;
-- documents;
-- recordings obtained lawfully.
-
-### Record the incident
-
-Write down:
-
-- date;
-- time;
-- location;
-- persons involved;
-- exact conduct;
-- caste-related statements, if any;
-- witnesses;
-- injuries;
-- property damage;
-- threats or retaliation.
-
-### Report the incident
-
-Approach the appropriate police authority and make the caste-related facts clear.
-
-### Seek medical treatment
-
-Where there is physical or sexual violence, immediate medical attention should be obtained.
-
-### Seek legal assistance
-
-A person unable to afford legal representation may approach the **District Legal Services Authority** for legal aid.
-
-### Report subsequent retaliation
-
-Threats, intimidation, social boycott or economic retaliation following a complaint should also be documented and reported.
-
----
-
-# 20. Why Does the Problem Persist?
-
-The continued existence of caste-based exclusion cannot be explained by the absence of legislation alone.
-
-Several factors may contribute:
-
-- persistence of caste hierarchy;
-- economic dependence;
-- unequal access to land and resources;
-- residential segregation;
-- traditional occupational structures;
-- social pressure;
-- fear of retaliation;
-- lack of awareness of legal rights;
-- barriers in reporting;
-- weaknesses in investigation and prosecution;
-- social acceptance of discriminatory practices in particular communities.
-
-The legal system can prohibit discrimination.
-
-But constitutional transformation also requires social and institutional change.
-
----
-
-# 21. Law Versus Social Reality
-
-This is perhaps the central lesson of Article 17.
-
-### The law says:
-
-Untouchability is abolished.
-
-### Social reality can be:
-
-Caste-based exclusion may continue in different forms.
-
-### Therefore:
-
-The constitutional challenge is not merely to enact laws.
-
-It is to ensure that those laws become **effective in people's everyday lives**.
-
-A constitutional right that cannot be exercised in practice remains an incomplete promise.
-
----
-
-# 22. The Constitutional Meaning of Article 17
-
-Article 17 should not be understood as a narrow prohibition concerning physical contact.
-
-Its deeper constitutional purpose is the destruction of caste-based civic disabilities.
-
-It asks whether a citizen can:
-
-- access public resources;
-- use public roads;
-- enter public institutions;
-- worship without caste-based exclusion;
-- pursue an occupation without inherited social restrictions;
-- participate equally in community life;
-- seek protection from the State;
-- live with dignity.
-
-In that sense, Article 17 is closely connected with the constitutional ideas of **equality, dignity and fraternity**.
-
-The Supreme Court has described the abolition of untouchability as an essential part of the constitutional project of integrating historically excluded communities into the social mainstream.²
-
----
-
-# 23. Conclusion
-
-India abolished untouchability constitutionally in 1950.
-
-But the history of Article 17 is not simply a story of prohibition.
-
-It is a story of **constitutional transformation**.
-
-Before independence, movements such as Vaikom and Mahad challenged exclusion from roads, water and religious spaces.
-
-The Constitution converted the principle of equality into an enforceable legal command.
-
-The Protection of Civil Rights Act, 1955 criminalised disabilities arising from untouchability.
-
-The SC/ST (Prevention of Atrocities) Act, 1989 created a broader framework for addressing specified caste-based atrocities.
-
-The 2013 legislation against manual scavenging addressed another deeply degrading practice connected with historical caste structures.
-
-And the Supreme Court has repeatedly reinforced the proposition that caste-based exclusion is incompatible with the constitutional order.
-
-Yet contemporary official statistics, court proceedings and human-rights interventions show that caste-based discrimination and violence remain legal and social concerns.
-
-The constitutional promise of Article 17 therefore requires more than remembering that untouchability was abolished.
-
-It requires asking whether equality exists **in practice**.
-
-The ultimate question is simple:
-
-### Can a person's birth determine their access to water, worship, education, occupation, public space, dignity or justice?
-
-The Constitution's answer is unequivocal:
-
-**No.**
-
-Article 17 transformed that answer from a demand for social reform into a constitutional command.
-
-The continuing responsibility is to make that command real.
-
----
-
-# Footnotes
-
-**1.** Constitution of India, art. 17. See also Government of India, *Constitution of India*, Article 17, which expressly provides for abolition of untouchability and punishment of disabilities arising from it.
-
-**2.** *State of Karnataka v. Appa Balu Ingale*, 1995 Supp (4) SCC 469; see Supreme Court of India discussion of the meaning and historical development of "untouchability" and Article 17.
-
-**3.** Supreme Court of India, historical materials concerning Dr. B.R. Ambedkar and the Mahad Satyagraha.
-
-**4.** Ministry of Social Justice & Empowerment, Government of India, "Centrally Sponsored Scheme for implementation of the Protection of Civil Rights Act, 1955 and the Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act, 1989."
-
-**5.** *State of Karnataka v. Appa Balu Ingale*, 1995 Supp (4) SCC 469. The judgment recognised Article 17 as applicable to caste-based disabilities and not merely to State action.
-
-**6.** Protection of Civil Rights Act, 1955, ss. 3–15A, India Code.
-
-**7.** Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act, 1989, India Code.
-
-**8.** *Dr. Balram Singh v. Union of India*, 2023 INSC 950, Supreme Court of India, judgment dated 20 October 2023.
-
-**9.** Press Information Bureau, Ministry of Social Justice & Empowerment, implementation of the Supreme Court's directions in *Dr. Balram Singh v. Union of India*.
-
-**10.** Ministry of Social Justice & Empowerment, Government of India, data presented in Parliament concerning cases registered under the SC/ST (Prevention of Atrocities) Act.
-
-**11.** Government of India's Open Government Data Platform, NCRB, *Crime in India 2023*, State/UT-wise crime/atrocities against Scheduled Castes.
-
----
-
-# Selected Bibliography
-
-### Primary Legal Sources
-
-1. **Constitution of India**, arts. 14, 15, 17, 21, 23, 46 and 338.
-2. **Protection of Civil Rights Act, 1955**, India Code.
-3. **Scheduled Castes and the Scheduled Tribes (Prevention of Atrocities) Act, 1989**, India Code.
-4. **Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013**, India Code.
-5. *State of Karnataka v. Appa Balu Ingale*, 1995 Supp (4) SCC 469.
-6. *Dr. Balram Singh v. Union of India*, 2023 INSC 950.
-
-### Government and Institutional Sources
-
-7. Ministry of Social Justice & Empowerment, Government of India.
-8. National Crime Records Bureau, *Crime in India*.
-9. Supreme Court of India.
-10. National Human Rights Commission of India.
-11. Government of India, Open Government Data Platform.
-
----
-
-### Editorial Note
-
-This article distinguishes **"untouchability" under Article 17** from the broader category of **caste discrimination and atrocities**. Not every caste-based crime legally constitutes an offence of untouchability. The applicable law depends on the facts, the identity of the parties, the conduct involved and the statutory ingredients of the offence.
-
-*This article is intended for legal education and public awareness and should not be treated as individual legal advice.*
+*This article is intended for legal education and public awareness. It does not constitute individual legal advice.*
