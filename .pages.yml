@@ -7,6 +7,14 @@ media:
     categories: [image]
     rename: safe
 
+  - name: author_images
+    label: Author Photos
+    input: media/author-images
+    output: /media/author-images
+    extensions: [jpg, jpeg, png, webp, gif]
+    categories: [image]
+    rename: safe
+
 content:
   - name: articles
     label: Articles
@@ -28,6 +36,17 @@ content:
         label: Author
         type: string
         required: true
+      - name: author_photo
+        label: Author photo
+        type: image
+        options:
+          media: author_images
+          path: .
+          extensions: [jpg, jpeg, png, webp, gif]
+          rename: safe
+      - name: author_bio
+        label: Author bio
+        type: text
       - name: date
         label: Publication date
         type: date
