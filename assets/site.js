@@ -97,6 +97,21 @@ function escapeHtml(str){
   }[m]));
 }
 
+async function syncYouTubeVideos(){
+  try {
+    const response = await fetch("/equalitytimes-test/assets/youtube.json?v=" + Date.now(), { cache: "no-store" });
+    if(!response.ok) throw new Error("YouTube data unavailable");
+    const videos = await response.json();
+    if(Array.isArray(videos) && videos.length){
+      SITE.videos = videos;
+      renderVideos("videosFeatured", 3);
+      renderVideos("videosGrid");
+    }
+  } catch(e) {
+    // Keep the existing local video list if the automatic feed is temporarily unavailable.
+  }
+}
+
 function renderVideos(targetId, count = SITE.videos.length){
   const el = byId(targetId);
   if(!el) return;
@@ -271,4 +286,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderFounderCompact("founderCompact");
   fillFounderPage();
   fillContact();
+  syncYouTubeVideos();
 });
