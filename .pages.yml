@@ -89,13 +89,8 @@ content:
         list: true
       - name: body
         label: Article
-        type: rich-text
+        type: text
         required: true
-        options:
-          format: markdown
-          media: article_images
-          path: .
-          rename: safe
 
     view:
       fields: [title, author, category, date]
