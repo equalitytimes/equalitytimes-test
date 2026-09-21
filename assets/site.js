@@ -277,7 +277,6 @@ initTheme();
 
 document.addEventListener("DOMContentLoaded", () => {
   addThemeToggle();
-  initLanguageSelector();
   yearFill();
   renderVideos("videosFeatured", 3);
   renderVideos("videosGrid");
