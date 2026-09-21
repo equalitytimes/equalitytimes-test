@@ -2026,15 +2026,14 @@ body.et-dark-mode .et-heading-line{background:#f4c400!important}
 
 /* =====================================================
    MOBILE HEADER OVERLAP FIX
-   Keep the desktop header fixed, but let the full
-   multi-row mobile header participate in page flow.
-   This prevents hero/section text from sitting underneath it.
+   The mobile header stays in normal document flow so
+   multi-row navigation never covers page content.
    ===================================================== */
 @media (max-width: 900px){
   .site-header,
   .et-header{
-    position:sticky !important;
-    top:0 !important;
+    position:relative !important;
+    top:auto !important;
     left:auto !important;
     right:auto !important;
     z-index:1000 !important;
@@ -2048,8 +2047,8 @@ body.et-dark-mode .et-heading-line{background:#f4c400!important}
 @media (max-width: 600px){
   .site-header,
   .et-header{
-    position:sticky !important;
-    top:0 !important;
+    position:relative !important;
+    top:auto !important;
   }
 
   body{
