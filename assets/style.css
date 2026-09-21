@@ -2073,3 +2073,16 @@ body.et-dark-mode .et-heading-line{background:#f4c400!important}
   .language-selector{right:52px!important;top:19px!important}
   .language-menu{top:43px!important;right:0!important}
 }
+
+/* ===== GOOGLE TRANSLATE BANNER — KEEP SITE CLEAN ===== */
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame,
+iframe[src*="translate.google.com"]{
+  display:none!important;
+  visibility:hidden!important;
+  height:0!important;
+  max-height:0!important;
+  border:0!important;
+}
+body{top:0!important;margin-top:0!important}
+html{margin-top:0!important}
