@@ -291,7 +291,7 @@ function addLanguageSelector(){
 
   const style = document.createElement("style");
   style.textContent = `
-    .language-selector{position:relative;display:inline-flex;align-items:center;margin-left:8px;flex:0 0 auto}
+    .language-selector{position:absolute!important;right:50px;top:23px;display:inline-flex;align-items:center;margin:0;flex:0 0 auto;z-index:1001}
     .language-toggle{width:34px;height:34px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:transparent;color:#fff;font:700 13px/1 Arial,sans-serif;cursor:pointer}
     .language-toggle:hover{border-color:#f4c400;color:#f4c400}
     .language-menu{position:absolute;right:0;top:42px;min-width:118px;background:#080d11;border:1px solid rgba(255,255,255,.16);box-shadow:0 8px 24px rgba(0,0,0,.22);padding:5px;z-index:1100}
@@ -300,7 +300,7 @@ function addLanguageSelector(){
     .goog-te-banner-frame.skiptranslate{display:none!important}
     body{top:0!important}
     .goog-tooltip,.goog-te-balloon-frame{display:none!important}
-    @media(max-width:900px){.language-selector{margin-left:0}.language-menu{left:0;right:auto;top:42px}}
+    @media(max-width:900px){.language-selector{right:50px;top:19px}.language-menu{left:auto;right:0;top:42px}}
   `;
   document.head.appendChild(style);
 
