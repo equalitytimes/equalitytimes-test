@@ -29,6 +29,11 @@
 body{padding-top:88px!important}
 @media(max-width:900px){body{padding-top:118px!important}}
 @media(max-width:600px){body{padding-top:118px!important}}
+
+/* Mobile header flow fix: keep the full header in document flow. */
+@media (max-width: 900px){
+  .site-header{position:sticky!important;top:0!important;left:auto!important;right:auto!important}
+}
 </style>
 </head>
 <body>
