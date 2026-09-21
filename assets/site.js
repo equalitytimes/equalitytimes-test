@@ -351,9 +351,9 @@ window.etGoogleTranslateInit = function(){
 };
 
 initTheme();
-addLanguageSelector();
 
 document.addEventListener("DOMContentLoaded", () => {
+  addLanguageSelector();
   addThemeToggle();
   yearFill();
   renderVideos("videosFeatured", 3);
