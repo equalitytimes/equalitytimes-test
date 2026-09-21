@@ -272,7 +272,86 @@ function addThemeToggle(){
   headerInner.appendChild(button);
   updateButton();
 }
+
+/* ===== EQUALITY TIMES LANGUAGE SELECTOR ===== */
+function addLanguageSelector(){
+  const headerInner = document.querySelector(".site-header-inner, .et-header-inner");
+  if(!headerInner || document.querySelector(".language-selector")) return;
+
+  const wrap = document.createElement("div");
+  wrap.className = "language-selector";
+  wrap.innerHTML = `
+    <button type="button" class="language-toggle" aria-label="Choose language" title="Choose language">A</button>
+    <div class="language-menu" hidden>
+      <button type="button" data-lang="en">English</button>
+      <button type="button" data-lang="mr">मराठी</button>
+      <button type="button" data-lang="hi">हिंदी</button>
+    </div>
+  `;
+
+  const style = document.createElement("style");
+  style.textContent = `
+    .language-selector{position:relative;display:inline-flex;align-items:center;margin-left:8px;flex:0 0 auto}
+    .language-toggle{width:34px;height:34px;border:1px solid rgba(255,255,255,.25);border-radius:50%;background:transparent;color:#fff;font:700 13px/1 Arial,sans-serif;cursor:pointer}
+    .language-toggle:hover{border-color:#f4c400;color:#f4c400}
+    .language-menu{position:absolute;right:0;top:42px;min-width:118px;background:#080d11;border:1px solid rgba(255,255,255,.16);box-shadow:0 8px 24px rgba(0,0,0,.22);padding:5px;z-index:1100}
+    .language-menu button{display:block;width:100%;border:0;background:transparent;color:#fff;text-align:left;padding:9px 10px;font:600 13px/1.2 Arial,sans-serif;cursor:pointer}
+    .language-menu button:hover{background:rgba(244,196,0,.12);color:#f4c400}
+    .goog-te-banner-frame.skiptranslate{display:none!important}
+    body{top:0!important}
+    .goog-tooltip,.goog-te-balloon-frame{display:none!important}
+    @media(max-width:900px){.language-selector{margin-left:0}.language-menu{left:0;right:auto;top:42px}}
+  `;
+  document.head.appendChild(style);
+
+  headerInner.appendChild(wrap);
+  const toggle = wrap.querySelector(".language-toggle");
+  const menu = wrap.querySelector(".language-menu");
+
+  toggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    menu.hidden = !menu.hidden;
+  });
+
+  wrap.querySelectorAll("[data-lang]").forEach(button => {
+    button.addEventListener("click", () => {
+      const lang = button.getAttribute("data-lang");
+      const select = document.querySelector(".goog-te-combo");
+      if(select){
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+      }
+      menu.hidden = true;
+    });
+  });
+
+  document.addEventListener("click", () => { menu.hidden = true; });
+
+  const target = document.createElement("div");
+  target.id = "google_translate_element";
+  target.style.cssText = "position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;";
+  document.body.appendChild(target);
+
+  if(!document.querySelector('script[data-et-translate]')){
+    const script = document.createElement("script");
+    script.src = "https://translate.google.com/translate_a/element.js?cb=etGoogleTranslateInit";
+    script.async = true;
+    script.setAttribute("data-et-translate", "true");
+    document.head.appendChild(script);
+  }
+}
+
+window.etGoogleTranslateInit = function(){
+  if(window.google && google.translate && google.translate.TranslateElement){
+    new google.translate.TranslateElement(
+      {pageLanguage:"en", includedLanguages:"en,mr,hi", autoDisplay:false},
+      "google_translate_element"
+    );
+  }
+};
+
 initTheme();
+addLanguageSelector();
 
 document.addEventListener("DOMContentLoaded", () => {
   addThemeToggle();
