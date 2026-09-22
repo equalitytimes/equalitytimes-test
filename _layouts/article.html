@@ -432,8 +432,8 @@ body.et-dark-mode .article-continue-card small{color:#f4c400!important}
   var content = document.querySelector('.article-content');
   if(!content) return;
 
-  var words = (content.innerText || '').trim().split(/\\s+/).filter(Boolean).length;
-  var minutes = Math.max(1, Math.ceil(words / 220));
+  var words = (content.innerText || '').trim().split(/\s+/).filter(Boolean).length;
+  var minutes = Math.max(1, Math.ceil(words / 200));
   var time = document.getElementById('article-reading-time');
   if(time) time.textContent = minutes + ' min read';
 
@@ -441,7 +441,7 @@ body.et-dark-mode .article-continue-card small{color:#f4c400!important}
   var list = document.getElementById('article-map-list');
   var headings = content.querySelectorAll('h2, h3');
 
-  if(map && list && headings.length){
+  if(map && list && headings.length >= 3 && words >= 700){
     headings.forEach(function(heading, index){
       if(!heading.id) heading.id = 'article-section-' + (index + 1);
       var li = document.createElement('li');
