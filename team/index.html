@@ -2,45 +2,87 @@
 layout: null
 permalink: /team/
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Team | Equality Times</title>
-<meta name="description" content="The people and contributors helping build Equality Times.">
-<link rel="stylesheet" href="/equalitytimes-test/assets/style.css">
-<style>
-.site-header{background:#080d11!important;color:#fff!important;width:100%!important;position:fixed!important;top:0!important;z-index:1000!important;box-shadow:0 4px 18px rgba(0,0,0,.08)!important}
-.site-header-inner{width:min(1180px,calc(100% - 56px))!important;min-height:88px!important;margin:0 auto!important;padding:0!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:30px!important}
-.site-brand{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;flex:0 0 auto!important;gap:4px!important;text-decoration:none!important}
-.site-brand img{display:block!important;width:128px!important;height:auto!important;max-width:128px!important;max-height:none!important;object-fit:contain!important}
-.site-brand-tagline{display:block!important;margin:0!important;color:#d7dbe0!important;font-family:Arial,Helvetica,sans-serif!important;font-size:8.5px!important;line-height:1!important;font-weight:600!important;letter-spacing:1.05px!important;white-space:nowrap!important;text-transform:uppercase!important}
-.site-nav{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:28px!important;flex:0 0 auto!important}
-.site-nav a{display:block!important;position:relative!important;box-sizing:border-box!important;color:#fff!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:15px!important;line-height:1.2!important;font-weight:600!important;padding:31px 0 27px!important;margin:0!important;border:0!important;border-bottom:3px solid transparent!important;white-space:nowrap!important}
-.site-nav a:hover,.site-nav a.active{color:#fff!important;border-bottom-color:#f4c400!important}
-.site-nav a::before,.site-nav a::after{content:none!important;display:none!important}
-@media(max-width:900px){.site-header-inner{width:calc(100% - 44px)!important;min-height:auto!important;padding:18px 0!important;flex-direction:column!important;align-items:flex-start!important}.site-brand-tagline{font-size:8px!important}.site-nav{width:100%!important;justify-content:flex-start!important;gap:20px!important;overflow-x:auto!important;flex-wrap:nowrap!important}.site-nav a{font-size:15px!important;padding:8px 0 12px!important}}
-@media(max-width:600px){.site-header-inner{width:calc(100% - 32px)!important;padding:16px 0!important}.site-brand img{width:128px!important}.site-brand-tagline{font-size:7.5px!important;letter-spacing:.8px!important}.site-nav{gap:16px!important}.site-nav a{font-size:14px!important;padding:7px 0 11px!important}}
-</style>
-    <link rel="icon" type="image/png" href="/equalitytimes-test/assets/logo-new.png">
+<meta name="description" content="Meet the people contributing to Equality Times through editorial work, legal research, writing, publications and visual media.">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+<link rel="icon" type="image/png" href="{{ '/assets/logo-new.png' | relative_url }}">
 
 <style>
-/* Global fixed navigation */
-.site-header,.et-header{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;z-index:1000!important;box-shadow:0 4px 18px rgba(0,0,0,.10)!important}
-body{padding-top:88px!important}
-@media(max-width:900px){body{padding-top:0!important}}
-@media(max-width:600px){body{padding-top:0!important}}
+.team-page{background:#f8f7f3;color:#111923}
+.team-hero{background:#080d11;color:#fff;padding:82px 28px 72px}
+.team-container{max-width:1180px;margin:0 auto}
+.team-kicker{display:flex;align-items:center;gap:13px;color:#f4c400;font:700 13px/1 Arial,Helvetica,sans-serif;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:22px}
+.team-kicker:after{content:"";width:58px;height:3px;background:#f4c400;display:block}
+.team-hero h1{margin:0;max-width:900px;font:700 clamp(48px,7vw,76px)/.98 Georgia,"Times New Roman",serif;letter-spacing:-2.5px}
+.team-hero p{max-width:720px;margin:26px 0 0;color:#d9dee5;font:19px/1.7 Arial,Helvetica,sans-serif}
 
-/* Mobile header flow fix: keep the full header in document flow. */
-@media (max-width: 900px){
-  .site-header{position:sticky!important;top:0!important;left:auto!important;right:auto!important}
+.team-content{max-width:1180px;margin:0 auto;padding:72px 28px 96px}
+.team-section{margin-bottom:68px}
+.team-section:last-child{margin-bottom:0}
+.team-section-heading{display:flex;align-items:center;gap:12px;color:#667085;font:700 12px/1.2 Arial,Helvetica,sans-serif;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
+.team-section-heading:before{content:"";width:34px;height:3px;background:#f4c400;display:block}
+.team-section h2{margin:0 0 10px;font:700 38px/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.6px}
+.team-section-intro{max-width:760px;margin:0 0 30px;color:#5d6877;font:17px/1.75 Arial,Helvetica,sans-serif}
+
+.team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#dfe2e6;border:1px solid #dfe2e6}
+.team-card{background:#fff;min-width:0}
+.team-card-photo{aspect-ratio:1/1;background:#eef0f2;overflow:hidden}
+.team-card-photo img{width:100%;height:100%;display:block;object-fit:cover}
+.team-card-body{padding:24px 24px 28px}
+.team-role-label{color:#7a6410;font:800 10px/1.3 Arial,Helvetica,sans-serif;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}
+.team-card h3{margin:0 0 7px;color:#111923;font:700 25px/1.18 Georgia,"Times New Roman",serif}
+.team-credentials{margin:0;color:#667085;font:600 14px/1.55 Arial,Helvetica,sans-serif}
+.team-description{margin:12px 0 0;color:#596574;font:15px/1.65 Arial,Helvetica,sans-serif}
+
+.team-founder{grid-column:span 3;display:grid;grid-template-columns:330px 1fr}
+.team-founder .team-card-photo{aspect-ratio:auto;min-height:330px}
+.team-founder .team-card-body{padding:42px 44px}
+.team-founder h3{font-size:34px}
+.team-founder .team-description{max-width:720px;font-size:16px}
+
+.team-note{margin-top:26px;padding:24px 0 0;border-top:1px solid #dfe2e6;color:#667085;font:15px/1.7 Arial,Helvetica,sans-serif}
+.team-note strong{color:#111923}
+
+.team-empty{padding:28px;border:1px dashed #cfd4da;background:#fff;color:#667085;font:15px/1.7 Arial,Helvetica,sans-serif}
+
+@media(max-width:900px){
+  .team-hero{padding:64px 22px 58px}
+  .team-content{padding:58px 22px 76px}
+  .team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .team-founder{grid-column:span 2;grid-template-columns:250px 1fr}
+  .team-founder .team-card-photo{min-height:250px}
+  .team-founder .team-card-body{padding:30px}
+}
+@media(max-width:600px){
+  .team-hero{padding:56px 20px 50px}
+  .team-hero h1{font-size:47px;letter-spacing:-1.5px}
+  .team-hero p{font-size:17px}
+  .team-content{padding:52px 16px 68px}
+  .team-section{margin-bottom:54px}
+  .team-section h2{font-size:32px}
+  .team-grid{grid-template-columns:1fr}
+  .team-founder{grid-column:auto;display:block}
+  .team-founder .team-card-photo{min-height:0;aspect-ratio:1/1}
+  .team-founder .team-card-body{padding:26px}
+  .team-founder h3{font-size:30px}
+  .team-card-body{padding:22px 20px 25px}
 }
 </style>
 </head>
+
 <body>
 <header class="site-header">
   <div class="site-header-inner">
-    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Equality Times home"><img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times"><span class="site-brand-tagline">LEGAL EDUCATION&nbsp;&nbsp;•&nbsp;&nbsp;RESEARCH&nbsp;&nbsp;•&nbsp;&nbsp;PUBLIC AWARENESS</span></a>
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Equality Times home">
+      <img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times">
+      <span class="site-brand-tagline">LEGAL EDUCATION&nbsp;&nbsp;•&nbsp;&nbsp;RESEARCH&nbsp;&nbsp;•&nbsp;&nbsp;PUBLIC AWARENESS</span>
+    </a>
     <nav class="site-nav" aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
@@ -50,42 +92,174 @@ body{padding-top:88px!important}
       <a href="{{ '/team/' | relative_url }}" class="active">Our Team</a>
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
     </nav>
-
-    </div>
-    </div>
   </div>
 </header>
-<main>
-<section class="et-page-hero"><div class="et-container"><div class="et-kicker">Our Team</div><h1>People behind the platform.</h1><p>Equality Times is built through editorial work, research, media and collaboration.</p></div></section>
-<section class="section"><div class="container"><div class="team-grid">
-<article class="team-card team-founder"><div class="team-photo"><img src="{{ '/assets/founder.jpg' | relative_url }}" alt="Founder of Equality Times"></div><div class="team-body"><div class="et-section-label">Founder &amp; Editorial Lead</div><h2>Harshal Manoharrao Gawande</h2><p class="team-role">Law Student · Founder, Equality Times</p><p>Founder of Equality Times, working across legal education, research, editorial development and public legal awareness.</p></div></article>
-<div class="team-note"><div class="et-section-label">Contributors</div><h2>A collaborative publication.</h2><p>As Equality Times grows, contributors may participate across research, writing, photography, media, editing and other project-based roles.</p><a class="btn btn-secondary" href="{{ '/write/' | relative_url }}">Contribute to Equality Times →</a></div>
-</div></div></section>
+
+<main class="team-page">
+  <section class="team-hero">
+    <div class="team-container">
+      <div class="team-kicker">Our Team</div>
+      <h1>People behind the platform.</h1>
+      <p>Equality Times brings together legal researchers, editors, writers and visual-media contributors working across legal education, research and public awareness.</p>
+    </div>
+  </section>
+
+  <div class="team-content">
+
+    <section class="team-section">
+      <div class="team-section-heading">Leadership</div>
+      <h2>Editorial leadership</h2>
+      <p class="team-section-intro">The editorial leadership responsible for shaping the platform, its publications and its public-facing work.</p>
+
+      <div class="team-grid">
+        <article class="team-card team-founder">
+          <div class="team-card-photo">
+            <img src="{{ '/assets/founder.jpg' | relative_url }}" alt="Harshal Manoharrao Gawande">
+          </div>
+          <div class="team-card-body">
+            <div class="team-role-label">Founder &amp; Editor-in-Chief</div>
+            <h3>Harshal Manoharrao Gawande</h3>
+            <p class="team-credentials">Law Student · Founder, Equality Times</p>
+            <p class="team-description">Founder of Equality Times, working across legal education, research, editorial development and public legal awareness.</p>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card-photo"><img src="{{ '/assets/team-default.svg' | relative_url }}" alt="Default portrait"></div>
+          <div class="team-card-body">
+            <div class="team-role-label">Managing Editor</div>
+            <h3>Pranay Gawande</h3>
+            <p class="team-credentials">B.A.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="team-section-heading">Legal Research</div>
+      <h2>Research &amp; legal affairs</h2>
+      <p class="team-section-intro">Contributors supporting legal research, analysis and subject-specific work for Equality Times publications.</p>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-card-photo"><img src="{{ '/assets/team-default.svg' | relative_url }}" alt="Default portrait"></div>
+          <div class="team-card-body">
+            <div class="team-role-label">Legal Research Associate</div>
+            <h3>Adv. Komal Kate</h3>
+            <p class="team-credentials">B.A. LL.B.</p>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card-photo"><img src="{{ '/assets/team-default.svg' | relative_url }}" alt="Default portrait"></div>
+          <div class="team-card-body">
+            <div class="team-role-label">Legal Research Associate</div>
+            <h3>Kendal Guagebti</h3>
+            <p class="team-credentials">J.D. Candidate · DePaul Law</p>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card-photo"><img src="{{ '/assets/team-default.svg' | relative_url }}" alt="Default portrait"></div>
+          <div class="team-card-body">
+            <div class="team-role-label">Constitution &amp; Legal Affairs Contributor</div>
+            <h3>Adv. Ritesh Gavai</h3>
+            <p class="team-credentials">M.A. · LL.B. · LL.M.</p>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card-photo"><img src="{{ '/assets/team-default.svg' | relative_url }}" alt="Default portrait"></div>
+          <div class="team-card-body">
+            <div class="team-role-label">Research &amp; Publications Associate</div>
+            <h3>Sunil Kumar Koliya</h3>
+            <p class="team-credentials">M.A. · B.Ed. · D.Ed.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="team-section-heading">Writing &amp; Contributions</div>
+      <h2>Writing contributors</h2>
+      <p class="team-section-intro">Writers and contributors bringing perspectives from legal education and other academic backgrounds.</p>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-card-photo"><img src="{{ '/assets/team-default.svg' | relative_url }}" alt="Default portrait"></div>
+          <div class="team-card-body">
+            <div class="team-role-label">Writing Contributor</div>
+            <h3>Natasha Bwalya Mulenga</h3>
+            <p class="team-credentials">Law Student · National Institute of Public Administration, Zambia</p>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card-photo"><img src="{{ '/assets/team-default.svg' | relative_url }}" alt="Default portrait"></div>
+          <div class="team-card-body">
+            <div class="team-role-label">Writing Contributor</div>
+            <h3>Ritesh Bhogekar</h3>
+            <p class="team-credentials">B.Tech Student · Nagpur University</p>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-card-photo"><img src="{{ '/assets/team-default.svg' | relative_url }}" alt="Default portrait"></div>
+          <div class="team-card-body">
+            <div class="team-role-label">Writing Contributor</div>
+            <h3>Contributor</h3>
+            <p class="team-credentials">Additional contributor profile to be added</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="team-note"><strong>Contributor network:</strong> Additional contributor profiles can be added as roles and appointments are confirmed.</div>
+    </section>
+
+    <section class="team-section">
+      <div class="team-section-heading">Photography &amp; Visual Media</div>
+      <h2>Visual storytelling</h2>
+      <p class="team-section-intro">Visual work supporting Equality Times articles, campaigns and public-facing media.</p>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-card-photo"><img src="{{ '/assets/team-default.svg' | relative_url }}" alt="Default portrait"></div>
+          <div class="team-card-body">
+            <div class="team-role-label">Photography &amp; Visual Media Lead</div>
+            <h3>Elizabeth</h3>
+            <p class="team-credentials">Diploma in Mass Media</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </div>
 </main>
+
 <footer class="professional-footer">
   <div class="professional-footer-inner">
     <div class="professional-footer-main">
       <div class="professional-footer-brand">
-        <img src="/equalitytimes-test/assets/logo-new.png" alt="Equality Times">
+        <img src="{{ '/assets/logo-new.png' | relative_url }}" alt="Equality Times">
         <div class="professional-footer-tagline">LEGAL EDUCATION &nbsp;•&nbsp; RESEARCH &nbsp;•&nbsp; PUBLIC AWARENESS</div>
         <p>A legal education, research and public awareness platform exploring law, equality, human rights, technology and access to justice.</p>
       </div>
 
       <div class="professional-footer-column">
         <h4>Explore</h4>
-        <a href="/equalitytimes-test/">Home</a>
-        <a href="/equalitytimes-test/about/">About</a>
-        <a href="/equalitytimes-test/articles/">Articles</a>
-        <a href="/equalitytimes-test/videos/">Videos</a>
-        <a href="/equalitytimes-test/research/">Research</a>
-        <a href="/equalitytimes-test/team/">Our Team</a>
-        <a href="/equalitytimes-test/contact/">Contact</a>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/articles/' | relative_url }}">Articles</a>
+        <a href="{{ '/videos/' | relative_url }}">Videos</a>
+        <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/team/' | relative_url }}">Our Team</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
       </div>
 
       <div class="professional-footer-column">
         <h4>Contribute</h4>
-        <a href="/equalitytimes-test/write/">Write for Equality Times</a>
-        <a href="/equalitytimes-test/write/">Submission Guidelines</a>
+        <a href="{{ '/write/' | relative_url }}">Write for Equality Times</a>
+        <a href="{{ '/write/' | relative_url }}">Submission Guidelines</a>
       </div>
 
       <div class="professional-footer-column">
@@ -105,5 +279,7 @@ body{padding-top:88px!important}
     </div>
   </div>
 </footer>
-<script src="/equalitytimes-test/assets/site.js"></script>
-</body></html>
+
+<script src="{{ '/assets/site.js' | relative_url }}"></script>
+</body>
+</html>
